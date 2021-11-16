@@ -37,7 +37,8 @@ stamp-h1
 *.pbxuser
 (^|/)build($|/)
 .DS_Store
-xcuserdata
+**/xcuserdata/
+
 
 # for Visual C++
 .vs
