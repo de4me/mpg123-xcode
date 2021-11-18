@@ -266,7 +266,7 @@
 		BDB4B5FB2743C1D1008FB306 /* ntom.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ntom.c; sourceTree = "<group>"; };
 		BDB4B5FC2743C1D1008FB306 /* layer3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = layer3.c; sourceTree = "<group>"; };
 		BDB4B5FD2743C1D1008FB306 /* id3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = id3.h; sourceTree = "<group>"; };
-		BDB4B5FE2743C266008FB306 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		BDB4B5FE2743C266008FB306 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.h; path = include/config.h; sourceTree = "<group>"; };
 		BDB4B60C2743C486008FB306 /* compat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = compat.c; sourceTree = "<group>"; };
 		BDB4B60D2743C486008FB306 /* wpathconv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wpathconv.h; sourceTree = "<group>"; };
 		BDB4B60E2743C486008FB306 /* compat_str.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = compat_str.c; sourceTree = "<group>"; };
@@ -304,13 +304,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BD32114B2743E7CC00E576CB /* mpg123 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = mpg123;
-			sourceTree = "<group>";
-		};
 		BD3680BE2743CC4D00884439 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,7 +365,6 @@
 			children = (
 				BDB4B5FE2743C266008FB306 /* config.h */,
 				BD3680F52743D32A00884439 /* src */,
-				BD32114B2743E7CC00E576CB /* mpg123 */,
 				BD8706232743C0CF00018E75 /* Products */,
 				BD3680BE2743CC4D00884439 /* Frameworks */,
 			);
@@ -814,7 +806,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.mpg123.mpg123;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../src/libmpg123\"";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -842,7 +833,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.mpg123.mpg123;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../src/libmpg123\"";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -907,6 +897,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
 			};
 			name = Debug;
 		};
@@ -965,6 +956,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
 			};
 			name = Release;
 		};
