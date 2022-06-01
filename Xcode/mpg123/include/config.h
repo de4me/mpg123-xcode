@@ -45,7 +45,7 @@
 /* #undef ASMALIGN_EXP */
 
 /* Define if __attribute__((aligned(16))) shall be used */
-/* #undef CCALIGN */
+#define CCALIGN 1
 
 /* Define if debugging is enabled. */
 /* #undef DEBUG */
