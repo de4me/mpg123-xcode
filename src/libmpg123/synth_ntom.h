@@ -164,7 +164,7 @@ int SYNTH_NAME(real *bandPtr,int channel, mpg123_handle *fr, int final)
 			}
 		}
 
-		b0-=0x10,window-=0x20;
+        b0-=0x10;window-=0x20;
 		window += bo1<<1;
 
 		for (j=15;j;j--,b0-=0x20,window-=0x10)
