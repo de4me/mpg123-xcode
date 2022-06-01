@@ -30,6 +30,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_3DNOW)
+
 	.globl ASM_NAME(dct36_3dnow)
 /*	.type	 ASM_NAME(dct36_3dnow),@function */
 ASM_NAME(dct36_3dnow):
@@ -558,3 +560,5 @@ L_COS9:
 #endif
 
 NONEXEC_STACK
+
+#endif

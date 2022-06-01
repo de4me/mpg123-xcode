@@ -8,6 +8,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_X86_64)
+
 #ifdef IS_MSABI
 #define in %rcx
 #define out1 %rdx
@@ -392,3 +394,5 @@ xmm15 tmp2b
 	ret
 
 NONEXEC_STACK
+
+#endif

@@ -54,9 +54,89 @@
 		BD3680CC2743CFC400884439 /* synth_real.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5C02743C1D1008FB306 /* synth_real.c */; };
 		BD3680CD2743CFCC00884439 /* synth_s32.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B59B2743C1D1008FB306 /* synth_s32.c */; };
 		BD3680CE2743CFDC00884439 /* synth.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5E72743C1D1008FB306 /* synth.c */; };
+		BD4AFB9E284794800031BA45 /* getcpuflags_arm.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B57F2743C1D1008FB306 /* getcpuflags_arm.c */; };
+		BD4AFB9F284794810031BA45 /* getcpuflags_arm.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B57F2743C1D1008FB306 /* getcpuflags_arm.c */; };
+		BD4AFBA22847959C0031BA45 /* dct36_neon64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5802743C1D1008FB306 /* dct36_neon64.S */; };
+		BD4AFBA32847959D0031BA45 /* dct36_neon64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5802743C1D1008FB306 /* dct36_neon64.S */; };
+		BD4AFBA4284795CA0031BA45 /* dct64_neon64_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5C12743C1D1008FB306 /* dct64_neon64_float.S */; };
+		BD4AFBA5284795CB0031BA45 /* dct64_neon64_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5C12743C1D1008FB306 /* dct64_neon64_float.S */; };
+		BD4AFBA6284796080031BA45 /* synth_neon64_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5DC2743C1D1008FB306 /* synth_neon64_float.S */; };
+		BD4AFBA7284796090031BA45 /* synth_neon64_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5DC2743C1D1008FB306 /* synth_neon64_float.S */; };
+		BD4AFBA82847960C0031BA45 /* synth_neon64_s32.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B59F2743C1D1008FB306 /* synth_neon64_s32.S */; };
+		BD4AFBA92847960D0031BA45 /* synth_neon64_s32.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B59F2743C1D1008FB306 /* synth_neon64_s32.S */; };
+		BD4AFBAA284796250031BA45 /* synth_neon64_accurate.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5862743C1D1008FB306 /* synth_neon64_accurate.S */; };
+		BD4AFBAB284796250031BA45 /* synth_neon64_accurate.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5862743C1D1008FB306 /* synth_neon64_accurate.S */; };
+		BD4AFBAE284796660031BA45 /* synth_stereo_neon64_accurate.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5AA2743C1D1008FB306 /* synth_stereo_neon64_accurate.S */; };
+		BD4AFBAF284796670031BA45 /* synth_stereo_neon64_accurate.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5AA2743C1D1008FB306 /* synth_stereo_neon64_accurate.S */; };
+		BD4AFBB02847966A0031BA45 /* synth_stereo_neon64_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B57E2743C1D1008FB306 /* synth_stereo_neon64_float.S */; };
+		BD4AFBB12847966A0031BA45 /* synth_stereo_neon64_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B57E2743C1D1008FB306 /* synth_stereo_neon64_float.S */; };
+		BD4AFBB22847966F0031BA45 /* synth_stereo_neon64_s32.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5D32743C1D1008FB306 /* synth_stereo_neon64_s32.S */; };
+		BD4AFBB32847966F0031BA45 /* synth_stereo_neon64_s32.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5D32743C1D1008FB306 /* synth_stereo_neon64_s32.S */; };
+		BD4AFBBA2847A4EC0031BA45 /* check_neon.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5F52743C1D1008FB306 /* check_neon.S */; };
+		BD4AFBBB2847A4EC0031BA45 /* check_neon.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5F52743C1D1008FB306 /* check_neon.S */; };
+		BD4AFBBC2847AD7C0031BA45 /* getcpuflags_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5942743C1D1008FB306 /* getcpuflags_x86_64.S */; };
+		BD4AFBBD2847AD7C0031BA45 /* getcpuflags_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5942743C1D1008FB306 /* getcpuflags_x86_64.S */; };
+		BD4AFBBE2847ADDB0031BA45 /* dct36_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5CE2743C1D1008FB306 /* dct36_x86_64.S */; };
+		BD4AFBBF2847ADDB0031BA45 /* dct36_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5CE2743C1D1008FB306 /* dct36_x86_64.S */; };
+		BD4AFBC02847AE100031BA45 /* synth_stereo_x86_64_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5D12743C1D1008FB306 /* synth_stereo_x86_64_float.S */; };
+		BD4AFBC12847AE110031BA45 /* synth_stereo_x86_64_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5D12743C1D1008FB306 /* synth_stereo_x86_64_float.S */; };
+		BD4AFBC22847AE430031BA45 /* synth_stereo_x86_64_accurate.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5F72743C1D1008FB306 /* synth_stereo_x86_64_accurate.S */; };
+		BD4AFBC32847AE430031BA45 /* synth_stereo_x86_64_accurate.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5F72743C1D1008FB306 /* synth_stereo_x86_64_accurate.S */; };
+		BD4AFBC42847AE900031BA45 /* dct64_x86_64_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5752743C1D1008FB306 /* dct64_x86_64_float.S */; };
+		BD4AFBC52847AE910031BA45 /* dct64_x86_64_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5752743C1D1008FB306 /* dct64_x86_64_float.S */; };
+		BD4AFBC62847AF810031BA45 /* synth_x86_64_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5A12743C1D1008FB306 /* synth_x86_64_float.S */; };
+		BD4AFBC72847AF810031BA45 /* synth_x86_64_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5A12743C1D1008FB306 /* synth_x86_64_float.S */; };
+		BD4AFBC82847AFBC0031BA45 /* synth_x86_64_s32.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5B02743C1D1008FB306 /* synth_x86_64_s32.S */; };
+		BD4AFBC92847AFBD0031BA45 /* synth_x86_64_s32.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5B02743C1D1008FB306 /* synth_x86_64_s32.S */; };
+		BD4AFBCA2847AFDE0031BA45 /* synth_stereo_x86_64_s32.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5BD2743C1D1008FB306 /* synth_stereo_x86_64_s32.S */; };
+		BD4AFBCB2847AFDF0031BA45 /* synth_stereo_x86_64_s32.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5BD2743C1D1008FB306 /* synth_stereo_x86_64_s32.S */; };
+		BD4AFBCC2847AFE60031BA45 /* synth_x86_64_accurate.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5CB2743C1D1008FB306 /* synth_x86_64_accurate.S */; };
+		BD4AFBCD2847AFE70031BA45 /* synth_x86_64_accurate.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5CB2743C1D1008FB306 /* synth_x86_64_accurate.S */; };
+		BD4AFBCE2847B0F80031BA45 /* dct64_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5A52743C1D1008FB306 /* dct64_i386.c */; };
+		BD4AFBCF2847B0F90031BA45 /* dct64_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5A52743C1D1008FB306 /* dct64_i386.c */; };
+		BD4AFBD02847B1290031BA45 /* synth_i586.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5C32743C1D1008FB306 /* synth_i586.S */; };
+		BD4AFBD12847B12A0031BA45 /* synth_i586.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5C32743C1D1008FB306 /* synth_i586.S */; };
+		BD4AFBD22847B1440031BA45 /* synth_i586_dither.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B57D2743C1D1008FB306 /* synth_i586_dither.S */; };
+		BD4AFBD32847B1440031BA45 /* synth_i586_dither.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B57D2743C1D1008FB306 /* synth_i586_dither.S */; };
+		BD4AFBD42847B1920031BA45 /* synth_3dnow.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5EB2743C1D1008FB306 /* synth_3dnow.S */; };
+		BD4AFBD52847B1930031BA45 /* synth_3dnow.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5EB2743C1D1008FB306 /* synth_3dnow.S */; };
+		BD4AFBD62847B1B10031BA45 /* dct64_3dnow.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5732743C1D1008FB306 /* dct64_3dnow.S */; };
+		BD4AFBD72847B1B10031BA45 /* dct64_3dnow.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5732743C1D1008FB306 /* dct64_3dnow.S */; };
+		BD4AFBD82847B2130031BA45 /* equalizer_3dnow.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B57B2743C1D1008FB306 /* equalizer_3dnow.S */; };
+		BD4AFBD92847B2140031BA45 /* equalizer_3dnow.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B57B2743C1D1008FB306 /* equalizer_3dnow.S */; };
+		BD4AFBDA2847B2690031BA45 /* dct36_3dnow.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5CC2743C1D1008FB306 /* dct36_3dnow.S */; };
+		BD4AFBDB2847B26A0031BA45 /* dct36_3dnow.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5CC2743C1D1008FB306 /* dct36_3dnow.S */; };
+		BD4AFBDC2847B2F00031BA45 /* synth_3dnowext.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5882743C1D1008FB306 /* synth_3dnowext.S */; };
+		BD4AFBDD2847B2F10031BA45 /* synth_3dnowext.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5882743C1D1008FB306 /* synth_3dnowext.S */; };
+		BD4AFBDE2847B3230031BA45 /* dct36_3dnowext.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5F22743C1D1008FB306 /* dct36_3dnowext.S */; };
+		BD4AFBDF2847B3230031BA45 /* dct36_3dnowext.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5F22743C1D1008FB306 /* dct36_3dnowext.S */; };
+		BD4AFBE02847B3770031BA45 /* tabinit_mmx.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5C72743C1D1008FB306 /* tabinit_mmx.S */; };
+		BD4AFBE12847B3780031BA45 /* tabinit_mmx.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5C72743C1D1008FB306 /* tabinit_mmx.S */; };
+		BD4AFBE22847B3A30031BA45 /* synth_mmx.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B58B2743C1D1008FB306 /* synth_mmx.S */; };
+		BD4AFBE32847B3A40031BA45 /* synth_mmx.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B58B2743C1D1008FB306 /* synth_mmx.S */; };
+		BD4AFBE42847B3F00031BA45 /* dct64_sse_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5912743C1D1008FB306 /* dct64_sse_float.S */; };
+		BD4AFBE52847B3F00031BA45 /* dct64_sse_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5912743C1D1008FB306 /* dct64_sse_float.S */; };
+		BD4AFBE62847B4180031BA45 /* synth_sse_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5972743C1D1008FB306 /* synth_sse_float.S */; };
+		BD4AFBE72847B4180031BA45 /* synth_sse_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5972743C1D1008FB306 /* synth_sse_float.S */; };
+		BD4AFBE82847B44A0031BA45 /* synth_stereo_sse_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5D52743C1D1008FB306 /* synth_stereo_sse_float.S */; };
+		BD4AFBE92847B44B0031BA45 /* synth_stereo_sse_float.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5D52743C1D1008FB306 /* synth_stereo_sse_float.S */; };
+		BD4AFBEA2847B46E0031BA45 /* synth_sse_s32.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5AC2743C1D1008FB306 /* synth_sse_s32.S */; };
+		BD4AFBEB2847B46F0031BA45 /* synth_sse_s32.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5AC2743C1D1008FB306 /* synth_sse_s32.S */; };
+		BD4AFBEC2847B4940031BA45 /* synth_stereo_sse_s32.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B58D2743C1D1008FB306 /* synth_stereo_sse_s32.S */; };
+		BD4AFBED2847B4940031BA45 /* synth_stereo_sse_s32.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B58D2743C1D1008FB306 /* synth_stereo_sse_s32.S */; };
+		BD4AFBEE2847B4BF0031BA45 /* dct36_sse.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5D72743C1D1008FB306 /* dct36_sse.S */; };
+		BD4AFBEF2847B4C00031BA45 /* dct36_sse.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5D72743C1D1008FB306 /* dct36_sse.S */; };
+		BD4AFBF02847B5180031BA45 /* synth_sse_accurate.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5B92743C1D1008FB306 /* synth_sse_accurate.S */; };
+		BD4AFBF12847B5180031BA45 /* synth_sse_accurate.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5B92743C1D1008FB306 /* synth_sse_accurate.S */; };
+		BD4AFBF22847B52A0031BA45 /* synth_stereo_sse_accurate.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5A82743C1D1008FB306 /* synth_stereo_sse_accurate.S */; };
+		BD4AFBF32847B52B0031BA45 /* synth_stereo_sse_accurate.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5A82743C1D1008FB306 /* synth_stereo_sse_accurate.S */; };
 		BDA3BD742743C61D00089976 /* compat.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB4B6102743C486008FB306 /* compat.h */; };
 		BDA3BD752743C61D00089976 /* compat.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB4B6102743C486008FB306 /* compat.h */; };
 		BDA3BD772743C68400089976 /* mpg123.h in Headers */ = {isa = PBXBuildFile; fileRef = BDA3BD762743C68400089976 /* mpg123.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDAB6FE12847CDAA00238256 /* synth_altivec.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5BA2743C1D1008FB306 /* synth_altivec.c */; };
+		BDAB6FE22847CDAB00238256 /* synth_altivec.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5BA2743C1D1008FB306 /* synth_altivec.c */; };
+		BDAB6FE32847CDDF00238256 /* dct64_altivec.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5E42743C1D1008FB306 /* dct64_altivec.c */; };
+		BDAB6FE42847CDDF00238256 /* dct64_altivec.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5E42743C1D1008FB306 /* dct64_altivec.c */; };
 		BDB4B5FF2743C2ED008FB306 /* fmt123.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB4B5BE2743C1D1008FB306 /* fmt123.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BDB4B6002743C305008FB306 /* parse.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5E22743C1D1008FB306 /* parse.c */; };
 		BDB4B6012743C319008FB306 /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5D92743C1D1008FB306 /* frame.c */; };
@@ -703,31 +783,71 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD4AFBD92847B2140031BA45 /* equalizer_3dnow.S in Sources */,
+				BD4AFBB02847966A0031BA45 /* synth_stereo_neon64_float.S in Sources */,
 				BD3211602743E87000E576CB /* lfs_alias.c in Sources */,
 				BD32115E2743E86900E576CB /* layer2.c in Sources */,
+				BD4AFBBB2847A4EC0031BA45 /* check_neon.S in Sources */,
+				BD4AFBAB284796250031BA45 /* synth_neon64_accurate.S in Sources */,
+				BD4AFBE52847B3F00031BA45 /* dct64_sse_float.S in Sources */,
+				BD4AFBDD2847B2F10031BA45 /* synth_3dnowext.S in Sources */,
+				BD4AFBC52847AE910031BA45 /* dct64_x86_64_float.S in Sources */,
+				BD4AFBEF2847B4C00031BA45 /* dct36_sse.S in Sources */,
+				BD4AFBC92847AFBD0031BA45 /* synth_x86_64_s32.S in Sources */,
+				BD4AFB9E284794800031BA45 /* getcpuflags_arm.c in Sources */,
+				BD4AFBED2847B4940031BA45 /* synth_stereo_sse_s32.S in Sources */,
 				BD3211572743E84900E576CB /* format.c in Sources */,
 				BD32115A2743E85900E576CB /* icy2utf8.c in Sources */,
+				BD4AFBBF2847ADDB0031BA45 /* dct36_x86_64.S in Sources */,
+				BD4AFBAE284796660031BA45 /* synth_stereo_neon64_accurate.S in Sources */,
+				BD4AFBA82847960C0031BA45 /* synth_neon64_s32.S in Sources */,
 				BD3211532743E83700E576CB /* dct64.c in Sources */,
+				BD4AFBD12847B12A0031BA45 /* synth_i586.S in Sources */,
+				BD4AFBF12847B5180031BA45 /* synth_sse_accurate.S in Sources */,
 				BD3211622743E87A00E576CB /* ntom.c in Sources */,
+				BD4AFBE12847B3780031BA45 /* tabinit_mmx.S in Sources */,
+				BD4AFBDB2847B26A0031BA45 /* dct36_3dnow.S in Sources */,
+				BD4AFBD72847B1B10031BA45 /* dct64_3dnow.S in Sources */,
 				BD32116A2743E8A600E576CB /* synth.c in Sources */,
 				BD3211632743E87D00E576CB /* optimize.c in Sources */,
+				BDAB6FE32847CDDF00238256 /* dct64_altivec.c in Sources */,
+				BD4AFBB22847966F0031BA45 /* synth_stereo_neon64_s32.S in Sources */,
+				BD4AFBC32847AE430031BA45 /* synth_stereo_x86_64_accurate.S in Sources */,
+				BDAB6FE22847CDAB00238256 /* synth_altivec.c in Sources */,
+				BD4AFBCD2847AFE70031BA45 /* synth_x86_64_accurate.S in Sources */,
+				BD4AFBE72847B4180031BA45 /* synth_sse_float.S in Sources */,
 				BD3211652743E88500E576CB /* readers.c in Sources */,
+				BD4AFBBD2847AD7C0031BA45 /* getcpuflags_x86_64.S in Sources */,
+				BD4AFBCF2847B0F90031BA45 /* dct64_i386.c in Sources */,
 				BD3211682743E89C00E576CB /* synth_real.c in Sources */,
+				BD4AFBD32847B1440031BA45 /* synth_i586_dither.S in Sources */,
+				BD4AFBDE2847B3230031BA45 /* dct36_3dnowext.S in Sources */,
 				BD3211592743E85500E576CB /* icy.c in Sources */,
 				BD3211542743E83E00E576CB /* dither.c in Sources */,
 				BD3211672743E88F00E576CB /* synth_8bit.c in Sources */,
+				BD4AFBA7284796090031BA45 /* synth_neon64_float.S in Sources */,
 				BD3211642743E88100E576CB /* parse.c in Sources */,
 				BD32116B2743E8AA00E576CB /* tabinit.c in Sources */,
 				BD3211582743E84C00E576CB /* frame.c in Sources */,
 				BD32115D2743E86700E576CB /* layer1.c in Sources */,
 				BD32115C2743E86100E576CB /* index.c in Sources */,
 				BD32115B2743E85D00E576CB /* id3.c in Sources */,
+				BD4AFBCA2847AFDE0031BA45 /* synth_stereo_x86_64_s32.S in Sources */,
+				BD4AFBF32847B52B0031BA45 /* synth_stereo_sse_accurate.S in Sources */,
+				BD4AFBEA2847B46E0031BA45 /* synth_sse_s32.S in Sources */,
+				BD4AFBA5284795CB0031BA45 /* dct64_neon64_float.S in Sources */,
+				BD4AFBA32847959D0031BA45 /* dct36_neon64.S in Sources */,
 				BD3211562743E84600E576CB /* feature.c in Sources */,
+				BD4AFBE22847B3A30031BA45 /* synth_mmx.S in Sources */,
+				BD4AFBC02847AE100031BA45 /* synth_stereo_x86_64_float.S in Sources */,
 				BD3211662743E88B00E576CB /* stringbuf.c in Sources */,
 				BD3211692743E89F00E576CB /* synth_s32.c in Sources */,
+				BD4AFBC62847AF810031BA45 /* synth_x86_64_float.S in Sources */,
 				BD3211552743E84200E576CB /* equalizer.c in Sources */,
 				BD3211612743E87400E576CB /* libmpg123.c in Sources */,
+				BD4AFBD52847B1930031BA45 /* synth_3dnow.S in Sources */,
 				BD32115F2743E86C00E576CB /* layer3.c in Sources */,
+				BD4AFBE92847B44B0031BA45 /* synth_stereo_sse_float.S in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,31 +855,71 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD4AFBD82847B2130031BA45 /* equalizer_3dnow.S in Sources */,
+				BD4AFBB12847966A0031BA45 /* synth_stereo_neon64_float.S in Sources */,
 				BD3680C02743CCB000884439 /* dither.c in Sources */,
 				BD3680CD2743CFCC00884439 /* synth_s32.c in Sources */,
+				BD4AFBBA2847A4EC0031BA45 /* check_neon.S in Sources */,
+				BD4AFBAA284796250031BA45 /* synth_neon64_accurate.S in Sources */,
+				BD4AFBE42847B3F00031BA45 /* dct64_sse_float.S in Sources */,
+				BD4AFBDC2847B2F00031BA45 /* synth_3dnowext.S in Sources */,
+				BD4AFBC42847AE900031BA45 /* dct64_x86_64_float.S in Sources */,
+				BD4AFBEE2847B4BF0031BA45 /* dct36_sse.S in Sources */,
+				BD4AFBC82847AFBC0031BA45 /* synth_x86_64_s32.S in Sources */,
+				BD4AFB9F284794810031BA45 /* getcpuflags_arm.c in Sources */,
+				BD4AFBEC2847B4940031BA45 /* synth_stereo_sse_s32.S in Sources */,
 				BD3680CC2743CFC400884439 /* synth_real.c in Sources */,
 				BD3680C62743CF3700884439 /* icy.c in Sources */,
+				BD4AFBBE2847ADDB0031BA45 /* dct36_x86_64.S in Sources */,
+				BD4AFBAF284796670031BA45 /* synth_stereo_neon64_accurate.S in Sources */,
+				BD4AFBA92847960D0031BA45 /* synth_neon64_s32.S in Sources */,
 				BD3680CA2743CFA800884439 /* stringbuf.c in Sources */,
+				BD4AFBD02847B1290031BA45 /* synth_i586.S in Sources */,
+				BD4AFBF02847B5180031BA45 /* synth_sse_accurate.S in Sources */,
 				BD3680C82743CF6500884439 /* lfs_alias.c in Sources */,
+				BD4AFBE02847B3770031BA45 /* tabinit_mmx.S in Sources */,
+				BD4AFBDA2847B2690031BA45 /* dct36_3dnow.S in Sources */,
+				BD4AFBD62847B1B10031BA45 /* dct64_3dnow.S in Sources */,
 				BDB4B6042743C339008FB306 /* id3.c in Sources */,
 				BD3680CB2743CFB700884439 /* synth_8bit.c in Sources */,
+				BDAB6FE42847CDDF00238256 /* dct64_altivec.c in Sources */,
+				BD4AFBB32847966F0031BA45 /* synth_stereo_neon64_s32.S in Sources */,
+				BD4AFBC22847AE430031BA45 /* synth_stereo_x86_64_accurate.S in Sources */,
+				BDAB6FE12847CDAA00238256 /* synth_altivec.c in Sources */,
+				BD4AFBCC2847AFE60031BA45 /* synth_x86_64_accurate.S in Sources */,
+				BD4AFBE62847B4180031BA45 /* synth_sse_float.S in Sources */,
 				BD3680CE2743CFDC00884439 /* synth.c in Sources */,
+				BD4AFBBC2847AD7C0031BA45 /* getcpuflags_x86_64.S in Sources */,
+				BD4AFBCE2847B0F80031BA45 /* dct64_i386.c in Sources */,
 				BD3680C12743CCB900884439 /* equalizer.c in Sources */,
+				BD4AFBD22847B1440031BA45 /* synth_i586_dither.S in Sources */,
+				BD4AFBDF2847B3230031BA45 /* dct36_3dnowext.S in Sources */,
 				BD3680C92743CF8C00884439 /* ntom.c in Sources */,
 				BDB4B6082743C37A008FB306 /* libmpg123.c in Sources */,
 				BDB4B6002743C305008FB306 /* parse.c in Sources */,
+				BD4AFBA6284796080031BA45 /* synth_neon64_float.S in Sources */,
 				BDB4B6052743C34A008FB306 /* optimize.c in Sources */,
 				BD3680C72743CF3B00884439 /* icy2utf8.c in Sources */,
 				BDB4B6032743C329008FB306 /* dct64.c in Sources */,
 				BDB4B6022743C31C008FB306 /* format.c in Sources */,
 				BDB4B6092743C389008FB306 /* index.c in Sources */,
 				BD3680C52743CCF600884439 /* layer3.c in Sources */,
+				BD4AFBCB2847AFDF0031BA45 /* synth_stereo_x86_64_s32.S in Sources */,
+				BD4AFBF22847B52A0031BA45 /* synth_stereo_sse_accurate.S in Sources */,
+				BD4AFBEB2847B46F0031BA45 /* synth_sse_s32.S in Sources */,
+				BD4AFBA4284795CA0031BA45 /* dct64_neon64_float.S in Sources */,
+				BD4AFBA22847959C0031BA45 /* dct36_neon64.S in Sources */,
 				BD3680C42743CCF200884439 /* layer2.c in Sources */,
+				BD4AFBE32847B3A40031BA45 /* synth_mmx.S in Sources */,
+				BD4AFBC12847AE110031BA45 /* synth_stereo_x86_64_float.S in Sources */,
 				BD3680C32743CCEE00884439 /* layer1.c in Sources */,
 				BDB4B6072743C367008FB306 /* tabinit.c in Sources */,
+				BD4AFBC72847AF810031BA45 /* synth_x86_64_float.S in Sources */,
 				BD3680C22743CCC400884439 /* feature.c in Sources */,
 				BDB4B6012743C319008FB306 /* frame.c in Sources */,
+				BD4AFBD42847B1920031BA45 /* synth_3dnow.S in Sources */,
 				BDB4B6062743C359008FB306 /* readers.c in Sources */,
+				BD4AFBE82847B44A0031BA45 /* synth_stereo_sse_float.S in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -881,9 +1041,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
-					"REAL_IS_FLOAT=1",
+					"OPT_MULTI=1",
 					"OPT_GENERIC=1",
-					"NOXFERMEM=1",
+					"OPT_GENERIC_DITHER=1",
+					"REAL_IS_FLOAT=1",
 				);
 				GCC_UNROLL_LOOPS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
@@ -941,9 +1102,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"REAL_IS_FLOAT=1",
+					"NDEBUG=1",
+					"OPT_MULTI=1",
 					"OPT_GENERIC=1",
-					"NOXFERMEM=1",
+					"OPT_GENERIC_DITHER=1",
+					"REAL_IS_FLOAT=1",
 				);
 				GCC_UNROLL_LOOPS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;

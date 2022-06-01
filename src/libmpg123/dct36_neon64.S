@@ -8,6 +8,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_NEON64)
+
 #ifndef __APPLE__
 	.section	.rodata
 #else
@@ -247,3 +249,5 @@ v0 tmp[4,13]
 	ret
 	
 NONEXEC_STACK
+
+#endif

@@ -13,6 +13,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_I586_DITHER)
+
 .data
 #if !defined (__APPLE__) && !defined (__OS2__)
 		.section	.rodata
@@ -380,3 +382,5 @@ L_dct64_i386:
 #endif
 
 NONEXEC_STACK
+
+#endif

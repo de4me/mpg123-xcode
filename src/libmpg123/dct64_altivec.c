@@ -20,6 +20,8 @@
 
 #include "mpg123lib_intern.h"
 
+#if defined(OPT_ALTIVEC)
+
 #ifndef __APPLE__
 #include <altivec.h>
 #endif
@@ -312,4 +314,4 @@ void dct64_altivec(real *out0,real *out1,real *samples)
 
 }
 
-
+#endif

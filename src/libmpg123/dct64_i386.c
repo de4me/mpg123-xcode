@@ -16,6 +16,8 @@
 
 #include "mpg123lib_intern.h"
 
+#if defined(OPT_I386)
+
 static void dct64_1(real *out0,real *out1,real *b1,real *b2,real *samples)
 {
  {
@@ -334,3 +336,4 @@ void dct64_i386(real *a,real *b,real *c)
   dct64_1(a,b,bufs,bufs+0x20,c);
 }
 
+#endif

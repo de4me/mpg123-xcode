@@ -8,6 +8,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_X86_64)
+
 	.text
 	ALIGN4
 	.globl ASM_NAME(getcpuflags)
@@ -55,3 +57,5 @@ ASM_NAME(getcpuflags):
 	ret
 	
 NONEXEC_STACK
+
+#endif

@@ -41,6 +41,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_3DNOWEXT)
+
 	.text
 	ALIGN32
 .globl ASM_NAME(dct36_3dnowext)
@@ -568,3 +570,5 @@ L_COS9:
 #endif
 
 NONEXEC_STACK
+
+#endif

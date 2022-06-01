@@ -1,4 +1,7 @@
 #include "mangle.h"
+
+#if defined(OPT_3DNOWEXT)
+
 #define MPL_DCT64 FUNC(dct64_3dnowext)
 #define SYNTH_NAME ASM_NAME(synth_1to1_3dnowext_asm)
 #include "synth_sse3d.h"
@@ -11,3 +14,5 @@ L_dct64_3dnowext:
 #endif
 
 NONEXEC_STACK
+
+#endif

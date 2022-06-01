@@ -8,6 +8,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_SSE)
+
 #define ARG(n) (8+n*4)(%ebp)
 #define TEMP(n) (4+n*16)(%esp)
 #define TEMP_BYTE(n) (4+n)(%esp)
@@ -415,3 +417,5 @@ L_costab_mmxsse:
 #endif
 
 NONEXEC_STACK
+
+#endif

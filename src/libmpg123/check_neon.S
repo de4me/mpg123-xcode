@@ -8,6 +8,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_NEON) || defined(OPT_NEON64)
+
 #ifndef __aarch64__
 #ifndef _M_ARM
 	.code 32
@@ -33,3 +35,5 @@ ASM_NAME(check_neon):
 #endif
 
 NONEXEC_STACK
+
+#endif

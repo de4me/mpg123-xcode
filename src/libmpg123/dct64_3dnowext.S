@@ -22,6 +22,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_3DNOWEXT)
+
 	.data
 	ALIGN4
 	/* .type	plus_1f, @object
@@ -733,3 +735,5 @@ L_costab_mmxsse:
 #endif
 
 NONEXEC_STACK
+
+#endif

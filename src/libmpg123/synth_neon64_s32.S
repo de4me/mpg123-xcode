@@ -8,6 +8,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_NEON64)
+
 #ifndef __APPLE__
 	.section	.rodata
 #else
@@ -134,3 +136,5 @@ ASM_NAME(synth_1to1_s32_neon64_asm):
 	ret
 
 NONEXEC_STACK
+
+#endif

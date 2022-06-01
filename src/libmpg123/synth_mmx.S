@@ -22,6 +22,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_MMX)
+
 .text
 
 .globl ASM_NAME(synth_1to1_MMX)
@@ -139,3 +141,5 @@ L_dct64_MMX:
 #endif
 
 NONEXEC_STACK
+
+#endif

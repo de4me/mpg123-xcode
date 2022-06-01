@@ -8,6 +8,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_3DNOW)
+
 .text
 	ALIGN4
 .globl ASM_NAME(do_equalizer_3dnow)
@@ -68,3 +70,5 @@ ASM_NAME(do_equalizer_3dnow):
 	ret
 
 NONEXEC_STACK
+
+#endif

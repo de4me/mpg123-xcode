@@ -9,7 +9,31 @@
 #define ACCURATE_ROUNDING 1
 
 /* Define if building universal (internal helper macro) */
-/* #undef AC_APPLE_UNIVERSAL_BUILD */
+#define AC_APPLE_UNIVERSAL_BUILD 1
+
+#if defined(__aarch64__)
+ #define OPT_NEON64 1
+#elif defined(__x86_64__)
+ #define OPT_X86_64 1
+#elif defined(__aarch__)
+// TODO: ARM
+// #define OPT_NEON 1
+#elif defined(__i386__)
+// TODO: X86
+// #define OPT_I386 1
+// #define OPT_I586 1
+// #define OPT_I586_DITHER 1
+// #define OPT_MMX 1
+// #define OPT_3DNOW 1
+// #define OPT_3DNOW_VINTAGE 1
+// #define OPT_3DNOWEXT 1
+// #define OPT_3DNOWEXT_VINTAGE 1
+// #define OPT_SSE 1
+// #define OPT_SSE_VINTAGE 1
+#elif defined(__ppc__)
+// TODO: PPC
+// #define OPT_ALTIVEC 1
+#endif
 
 /* Define if .balign is present. */
 #define ASMALIGN_BALIGN 1

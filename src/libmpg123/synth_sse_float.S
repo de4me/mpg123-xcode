@@ -8,6 +8,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_SSE)
+
 /* real *window; */
 #define WINDOW %ebx
 /* real *b0; */
@@ -243,3 +245,5 @@ ASM_NAME(synth_1to1_real_sse_asm):
 	ret
 
 NONEXEC_STACK
+
+#endif

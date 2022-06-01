@@ -8,6 +8,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_MMX)
+
 .text
 
 	ALIGN32
@@ -823,3 +825,5 @@ L_costab_mmxsse:
 #endif
 
 NONEXEC_STACK
+
+#endif

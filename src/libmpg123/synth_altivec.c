@@ -9,6 +9,8 @@
 
 #include "mpg123lib_intern.h"
 
+#if defined(OPT_ALTIVEC)
+
 #ifndef __APPLE__
 #include <altivec.h>
 #endif
@@ -1055,3 +1057,5 @@ int synth_1to1_s32_stereo_altivec(real *bandPtr_l, real *bandPtr_r, mpg123_handl
 	
 	return clip;
 }
+
+#endif

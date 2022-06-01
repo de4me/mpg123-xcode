@@ -8,6 +8,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_SSE)
+
 #define in %edi
 #define out1 %edi
 #define out2 %edx
@@ -385,3 +387,5 @@ xmm5 tmp2b
 	ret
 
 NONEXEC_STACK
+
+#endif

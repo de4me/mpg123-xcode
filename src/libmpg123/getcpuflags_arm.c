@@ -11,6 +11,8 @@
 #include "mpg123lib_intern.h"
 #include "getcpuflags.h"
 
+#if defined(OPT_NEON) || defined(OPT_NEON64)
+
 extern void check_neon(void);
 
 #ifndef _M_ARM
@@ -59,3 +61,5 @@ unsigned int getcpuflags(struct cpuflags* cf)
 	
 	return 0;
 }
+
+#endif

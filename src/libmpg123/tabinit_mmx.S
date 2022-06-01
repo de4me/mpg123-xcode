@@ -10,6 +10,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_MMX)
+
 .data
 	ALIGN32
 .globl ASM_NAME(costab_mmxsse)
@@ -227,3 +229,5 @@ ASM_NAME(make_decode_tables_mmx_asm):
 	ret
 
 NONEXEC_STACK
+
+#endif

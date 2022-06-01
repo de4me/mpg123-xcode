@@ -8,6 +8,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_X86_64)
+
 #ifdef IS_MSABI
 /* short *window; */
 #define ARG0 %r10
@@ -257,3 +259,5 @@ ASM_NAME(synth_1to1_real_x86_64_asm):
 	ret
 
 NONEXEC_STACK
+
+#endif
