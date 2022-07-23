@@ -107,6 +107,9 @@
 /* Define to 1 if you have the <CoreServices/CoreServices.h> header file. */
 #define HAVE_CORESERVICES_CORESERVICES_H 1
 
+/* Define to 1 if you have the `ctermid' function. */
+#define HAVE_CTERMID 1
+
 /* Define to 1 if you have the <CUlib.h> header file. */
 /* #undef HAVE_CULIB_H */
 
@@ -114,16 +117,22 @@
 #define HAVE_DIRENT_H 1
 
 /* Define to 1 if you have the `dlclose' function. */
-/* #undef HAVE_DLCLOSE */
+#define HAVE_DLCLOSE 1
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #define HAVE_DLFCN_H 1
 
 /* Define to 1 if you have the `dlopen' function. */
-/* #undef HAVE_DLOPEN */
+#define HAVE_DLOPEN 1
 
 /* Define to 1 if you have the `dlsym' function. */
-/* #undef HAVE_DLSYM */
+#define HAVE_DLSYM 1
+
+/* Define to 1 if you have the `execvp' function. */
+#define HAVE_EXECVP 1
+
+/* Define to 1 if you have the `fork' function. */
+#define HAVE_FORK 1
 
 /* Define to 1 if you have the `getaddrinfo' function. */
 #define HAVE_GETADDRINFO 1
@@ -205,6 +214,9 @@
 
 /* Define to 1 if you have the `setlocale' function. */
 #define HAVE_SETLOCALE 1
+
+/* for Win/DOS system with setmode() */
+/* #undef HAVE_SETMODE */
 
 /* Define to 1 if you have the `setpriority' function. */
 #define HAVE_SETPRIORITY 1
@@ -320,6 +332,9 @@
 /* Define to 1 if you have the <ws2tcpip.h> header file. */
 /* #undef HAVE_WS2TCPIP_H */
 
+/* for Win/DOS system with _setmode() */
+/* #undef HAVE__SETMODE */
+
 /* Define to indicate that float storage follows IEEE754. */
 #define IEEE_FLOAT 1
 
@@ -345,8 +360,11 @@
 /* Define to the shared archive member specification, say "(shr.o)". */
 /* #undef LT_SHARED_LIB_MEMBER */
 
+/* Define to for new net123 network stack. */
+#define NET123 1
+
 /* Define if network support is enabled. */
-#define NETWORK 1
+/* #undef NETWORK */
 
 /* Define to disable 16 bit integer output. */
 /* #undef NO_16BIT */
@@ -416,7 +434,7 @@
 #define PACKAGE_NAME "mpg123"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "mpg123 1.29.3"
+#define PACKAGE_STRING "mpg123 1.30.1"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "mpg123"
@@ -425,7 +443,7 @@
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "1.29.3"
+#define PACKAGE_VERSION "1.30.1"
 
 /* Define if portaudio v18 API is wanted. */
 /* #undef PORTAUDIO18 */
@@ -467,7 +485,7 @@
 /* #undef USE_YASM_FOR_AVX */
 
 /* Version number of package */
-#define VERSION "1.29.3"
+#define VERSION "1.30.1"
 
 /* Define to use Win32 named pipes */
 /* #undef WANT_WIN32_FIFO */

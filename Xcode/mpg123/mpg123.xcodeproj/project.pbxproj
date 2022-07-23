@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD2410C8288C0CB800BE66F1 /* net123.h in Headers */ = {isa = PBXBuildFile; fileRef = BD2410C2288C0CB800BE66F1 /* net123.h */; };
+		BD2410C9288C0CB800BE66F1 /* net123.h in Headers */ = {isa = PBXBuildFile; fileRef = BD2410C2288C0CB800BE66F1 /* net123.h */; };
 		BD3211442743E43D00E576CB /* wpathconv.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB4B60D2743C486008FB306 /* wpathconv.h */; };
 		BD3211512743E7F100E576CB /* libcompat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB4B6152743C50E008FB306 /* libcompat.a */; };
 		BD3211532743E83700E576CB /* dct64.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5852743C1D1008FB306 /* dct64.c */; };
@@ -164,6 +166,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD2410C0288C0CB800BE66F1 /* net123_winhttp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net123_winhttp.c; sourceTree = "<group>"; };
+		BD2410C1288C0CB800BE66F1 /* net123_wininet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net123_wininet.c; sourceTree = "<group>"; };
+		BD2410C2288C0CB800BE66F1 /* net123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net123.h; sourceTree = "<group>"; };
+		BD2410C3288C0CB800BE66F1 /* net123_exec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net123_exec.c; sourceTree = "<group>"; };
+		BD2410CC288C0D9700BE66F1 /* term_none.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = term_none.c; sourceTree = "<group>"; };
+		BD2410CD288C0D9700BE66F1 /* term_posix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = term_posix.c; sourceTree = "<group>"; };
+		BD2410CE288C0D9700BE66F1 /* term_win32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = term_win32.c; sourceTree = "<group>"; };
+		BD2410D5288C0E3F00BE66F1 /* terms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = terms.h; sourceTree = "<group>"; };
 		BD32114A2743E7CC00E576CB /* mpg123.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mpg123.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD32116F2743EAE900E576CB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BD3211712743EAFC00E576CB /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
@@ -421,6 +431,10 @@
 				BD3681162743D49200884439 /* mpg123-strip.c */,
 				BD36810D2743D49200884439 /* mpg123.c */,
 				BD3681112743D49200884439 /* mpg123app.h */,
+				BD2410C3288C0CB800BE66F1 /* net123_exec.c */,
+				BD2410C0288C0CB800BE66F1 /* net123_winhttp.c */,
+				BD2410C1288C0CB800BE66F1 /* net123_wininet.c */,
+				BD2410C2288C0CB800BE66F1 /* net123.h */,
 				BD3681082743D49200884439 /* out123.c */,
 				BD3681132743D49200884439 /* playlist.c */,
 				BD36810A2743D49200884439 /* playlist.h */,
@@ -430,8 +444,12 @@
 				BD3681122743D49200884439 /* streamdump.h */,
 				BD3681172743D49200884439 /* sysutil.c */,
 				BD3681072743D49200884439 /* sysutil.h */,
+				BD2410CC288C0D9700BE66F1 /* term_none.c */,
+				BD2410CD288C0D9700BE66F1 /* term_posix.c */,
+				BD2410CE288C0D9700BE66F1 /* term_win32.c */,
 				BD3681092743D49200884439 /* term.c */,
 				BD3681062743D49200884439 /* term.h */,
+				BD2410D5288C0E3F00BE66F1 /* terms.h */,
 				BD36811A2743D4A000884439 /* win32_net.c */,
 				BD3681182743D4A000884439 /* win32_support.c */,
 				BD3681192743D4A000884439 /* win32_support.h */,
@@ -629,6 +647,7 @@
 			files = (
 				BD32116C2743E97D00E576CB /* mpg123.h in Headers */,
 				BD32116D2743E99800E576CB /* fmt123.h in Headers */,
+				BD2410C9288C0CB800BE66F1 /* net123.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +658,7 @@
 				BDA3BD742743C61D00089976 /* compat.h in Headers */,
 				BDB4B5FF2743C2ED008FB306 /* fmt123.h in Headers */,
 				BDA3BD772743C68400089976 /* mpg123.h in Headers */,
+				BD2410C8288C0CB800BE66F1 /* net123.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -962,7 +982,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.29.3;
+				MARKETING_VERSION = 1.30.1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.mpg123.mpg123;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -989,7 +1009,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.29.3;
+				MARKETING_VERSION = 1.30.1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.mpg123.mpg123;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
