@@ -348,8 +348,11 @@
    functions. */
 #define LFS_ALIAS_BITS 64
 
+/* Define the search path for runtime loadable modules. */
+#define PKGLIBDIR get_modules_dir()
+
 /* Define to the extension used for runtime loadable modules, say, ".so". */
-/* #undef LT_MODULE_EXT */
+#define LT_MODULE_EXT ".so"
 
 /* Define to the sub-directory where libtool stores uninstalled libraries. */
 #define LT_OBJDIR ".libs/"

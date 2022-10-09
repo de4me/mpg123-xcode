@@ -1,0 +1,10 @@
+
+framework module syn123 [system] [extern_c] {
+
+  umbrella header "syn123.h"
+
+  export *
+  module * { export * }
+
+}
+

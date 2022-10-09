@@ -18,6 +18,10 @@
 #include "module.h"
 #include "debug.h"
 
+#ifdef OUT123_XCODE
+#include "modules_dir.h"
+#endif
+
 #ifndef USE_MODULES
 #error This is a build without modules. Why am I here?
 #endif

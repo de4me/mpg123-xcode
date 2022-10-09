@@ -1,0 +1,10 @@
+
+framework module out123 [system] [extern_c] {
+
+  umbrella header "out123.h"
+
+  export *
+  module * { export * }
+
+}
+
