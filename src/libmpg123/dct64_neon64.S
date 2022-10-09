@@ -8,6 +8,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_NEON64) && !defined(ACCURATE_ROUNDING)
+
 #ifndef __APPLE__
 	.section	.rodata
 #else
@@ -297,3 +299,5 @@ ASM_NAME(dct64_neon64):
 	ret
 
 NONEXEC_STACK
+
+#endif

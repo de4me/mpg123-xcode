@@ -8,6 +8,8 @@
 
 #include "mangle.h"
 
+#if defined(OPT_X86_64) && !defined(ACCURATE_ROUNDING)
+
 #ifdef IS_MSABI
 /* short *out0 */
 #define ARG0 %r9
@@ -462,3 +464,5 @@ ASM_NAME(dct64_x86_64):
 	ret
 
 NONEXEC_STACK
+
+#endif

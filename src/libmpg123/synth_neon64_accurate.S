@@ -8,7 +8,7 @@
 
 #include "mangle.h"
 
-#if defined(OPT_NEON64)
+#if defined(OPT_NEON64) && defined(ACCURATE_ROUNDING)
 
 #ifndef __APPLE__
 	.section	.rodata

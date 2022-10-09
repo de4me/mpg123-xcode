@@ -359,6 +359,18 @@
 		BDB736EB28EAFDAD0022D468 /* modules_dir.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB736E328EAECA30022D468 /* modules_dir.m */; };
 		BDB736EC28EAFDB60022D468 /* modules_dir.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB736E528EAECBC0022D468 /* modules_dir.h */; };
 		BDC3353628EE9992002427FD /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB4B5FE2743C266008FB306 /* config.h */; };
+		BDD9666C28F343D100885CE5 /* synth_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5A22743C1D1008FB306 /* synth_x86_64.S */; };
+		BDD9666D28F343D200885CE5 /* synth_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5A22743C1D1008FB306 /* synth_x86_64.S */; };
+		BDD9666E28F3445900885CE5 /* dct64_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5F32743C1D1008FB306 /* dct64_x86_64.S */; };
+		BDD9666F28F3445A00885CE5 /* dct64_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5F32743C1D1008FB306 /* dct64_x86_64.S */; };
+		BDD9667028F3449600885CE5 /* synth_stereo_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5E02743C1D1008FB306 /* synth_stereo_x86_64.S */; };
+		BDD9667128F3449700885CE5 /* synth_stereo_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5E02743C1D1008FB306 /* synth_stereo_x86_64.S */; };
+		BDD9667228F3450E00885CE5 /* dct64_neon64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5AE2743C1D1008FB306 /* dct64_neon64.S */; };
+		BDD9667328F3450F00885CE5 /* dct64_neon64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5AE2743C1D1008FB306 /* dct64_neon64.S */; };
+		BDD9667428F3452900885CE5 /* synth_neon64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5DA2743C1D1008FB306 /* synth_neon64.S */; };
+		BDD9667528F3452A00885CE5 /* synth_neon64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5DA2743C1D1008FB306 /* synth_neon64.S */; };
+		BDD9667628F3454600885CE5 /* synth_stereo_neon64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5A02743C1D1008FB306 /* synth_stereo_neon64.S */; };
+		BDD9667728F3454700885CE5 /* synth_stereo_neon64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5A02743C1D1008FB306 /* synth_stereo_neon64.S */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1899,6 +1911,8 @@
 				BD4AFBBB2847A4EC0031BA45 /* check_neon.S in Sources */,
 				BD4AFBAB284796250031BA45 /* synth_neon64_accurate.S in Sources */,
 				BD4AFBE52847B3F00031BA45 /* dct64_sse_float.S in Sources */,
+				BDD9667728F3454700885CE5 /* synth_stereo_neon64.S in Sources */,
+				BDD9667128F3449700885CE5 /* synth_stereo_x86_64.S in Sources */,
 				BD4AFBDD2847B2F10031BA45 /* synth_3dnowext.S in Sources */,
 				BD4AFBC52847AE910031BA45 /* dct64_x86_64_float.S in Sources */,
 				BD4AFBEF2847B4C00031BA45 /* dct36_sse.S in Sources */,
@@ -1919,6 +1933,7 @@
 				BD4AFBD72847B1B10031BA45 /* dct64_3dnow.S in Sources */,
 				BD32116A2743E8A600E576CB /* synth.c in Sources */,
 				BD3211632743E87D00E576CB /* optimize.c in Sources */,
+				BDD9667328F3450F00885CE5 /* dct64_neon64.S in Sources */,
 				BDAB6FE32847CDDF00238256 /* dct64_altivec.c in Sources */,
 				BD4AFBB22847966F0031BA45 /* synth_stereo_neon64_s32.S in Sources */,
 				BD4AFBC32847AE430031BA45 /* synth_stereo_x86_64_accurate.S in Sources */,
@@ -1927,6 +1942,7 @@
 				BD4AFBE72847B4180031BA45 /* synth_sse_float.S in Sources */,
 				BD3211652743E88500E576CB /* readers.c in Sources */,
 				BD4AFBBD2847AD7C0031BA45 /* getcpuflags_x86_64.S in Sources */,
+				BDD9666D28F343D200885CE5 /* synth_x86_64.S in Sources */,
 				BD4AFBCF2847B0F90031BA45 /* dct64_i386.c in Sources */,
 				BD3211682743E89C00E576CB /* synth_real.c in Sources */,
 				BD4AFBD32847B1440031BA45 /* synth_i586_dither.S in Sources */,
@@ -1937,6 +1953,7 @@
 				BD4AFBA7284796090031BA45 /* synth_neon64_float.S in Sources */,
 				BD3211642743E88100E576CB /* parse.c in Sources */,
 				BD32116B2743E8AA00E576CB /* tabinit.c in Sources */,
+				BDD9667528F3452A00885CE5 /* synth_neon64.S in Sources */,
 				BD3211582743E84C00E576CB /* frame.c in Sources */,
 				BD32115D2743E86700E576CB /* layer1.c in Sources */,
 				BD32115C2743E86100E576CB /* index.c in Sources */,
@@ -1944,6 +1961,7 @@
 				BD4AFBCA2847AFDE0031BA45 /* synth_stereo_x86_64_s32.S in Sources */,
 				BD4AFBF32847B52B0031BA45 /* synth_stereo_sse_accurate.S in Sources */,
 				BD4AFBEA2847B46E0031BA45 /* synth_sse_s32.S in Sources */,
+				BDD9666F28F3445A00885CE5 /* dct64_x86_64.S in Sources */,
 				BD4AFBA5284795CB0031BA45 /* dct64_neon64_float.S in Sources */,
 				BD4AFBA32847959D0031BA45 /* dct36_neon64.S in Sources */,
 				BD3211562743E84600E576CB /* feature.c in Sources */,
@@ -1971,6 +1989,8 @@
 				BD4AFBBA2847A4EC0031BA45 /* check_neon.S in Sources */,
 				BD4AFBAA284796250031BA45 /* synth_neon64_accurate.S in Sources */,
 				BD4AFBE42847B3F00031BA45 /* dct64_sse_float.S in Sources */,
+				BDD9667628F3454600885CE5 /* synth_stereo_neon64.S in Sources */,
+				BDD9667028F3449600885CE5 /* synth_stereo_x86_64.S in Sources */,
 				BD4AFBDC2847B2F00031BA45 /* synth_3dnowext.S in Sources */,
 				BD4AFBC42847AE900031BA45 /* dct64_x86_64_float.S in Sources */,
 				BD4AFBEE2847B4BF0031BA45 /* dct36_sse.S in Sources */,
@@ -1991,6 +2011,7 @@
 				BD4AFBD62847B1B10031BA45 /* dct64_3dnow.S in Sources */,
 				BDB4B6042743C339008FB306 /* id3.c in Sources */,
 				BD3680CB2743CFB700884439 /* synth_8bit.c in Sources */,
+				BDD9667228F3450E00885CE5 /* dct64_neon64.S in Sources */,
 				BDAB6FE42847CDDF00238256 /* dct64_altivec.c in Sources */,
 				BD4AFBB32847966F0031BA45 /* synth_stereo_neon64_s32.S in Sources */,
 				BD4AFBC22847AE430031BA45 /* synth_stereo_x86_64_accurate.S in Sources */,
@@ -1999,6 +2020,7 @@
 				BD4AFBE62847B4180031BA45 /* synth_sse_float.S in Sources */,
 				BD3680CE2743CFDC00884439 /* synth.c in Sources */,
 				BD4AFBBC2847AD7C0031BA45 /* getcpuflags_x86_64.S in Sources */,
+				BDD9666C28F343D100885CE5 /* synth_x86_64.S in Sources */,
 				BD4AFBCE2847B0F80031BA45 /* dct64_i386.c in Sources */,
 				BD3680C12743CCB900884439 /* equalizer.c in Sources */,
 				BD4AFBD22847B1440031BA45 /* synth_i586_dither.S in Sources */,
@@ -2009,6 +2031,7 @@
 				BD4AFBA6284796080031BA45 /* synth_neon64_float.S in Sources */,
 				BDB4B6052743C34A008FB306 /* optimize.c in Sources */,
 				BD3680C72743CF3B00884439 /* icy2utf8.c in Sources */,
+				BDD9667428F3452900885CE5 /* synth_neon64.S in Sources */,
 				BDB4B6032743C329008FB306 /* dct64.c in Sources */,
 				BDB4B6022743C31C008FB306 /* format.c in Sources */,
 				BDB4B6092743C389008FB306 /* index.c in Sources */,
@@ -2016,6 +2039,7 @@
 				BD4AFBCB2847AFDF0031BA45 /* synth_stereo_x86_64_s32.S in Sources */,
 				BD4AFBF22847B52A0031BA45 /* synth_stereo_sse_accurate.S in Sources */,
 				BD4AFBEB2847B46F0031BA45 /* synth_sse_s32.S in Sources */,
+				BDD9666E28F3445900885CE5 /* dct64_x86_64.S in Sources */,
 				BD4AFBA4284795CA0031BA45 /* dct64_neon64_float.S in Sources */,
 				BD4AFBA22847959C0031BA45 /* dct36_neon64.S in Sources */,
 				BD3680C42743CCF200884439 /* layer2.c in Sources */,

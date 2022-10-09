@@ -8,7 +8,7 @@
 
 #include "mangle.h"
 
-#if defined(OPT_X86_64)
+#if defined(OPT_X86_64) && defined(ACCURATE_ROUNDING)
 
 #ifdef IS_MSABI
 /* short *window; */
