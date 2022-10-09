@@ -48,3 +48,7 @@ Release
 *.ncb
 *.suo
 *.sdf
+
+#Auto-Generated
+/Xcode/mpg123/Headers/
+
