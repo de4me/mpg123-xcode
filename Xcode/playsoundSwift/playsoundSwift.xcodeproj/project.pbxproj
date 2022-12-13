@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD25FB1328EC6E1900D4D313 /* mpg123+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25FB1228EC6E1900D4D313 /* mpg123+Utils.swift */; };
+		BDA5D5E428EC379D00DF34A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5D5E328EC379D00DF34A7 /* AppDelegate.swift */; };
+		BDA5D5E628EC379D00DF34A7 /* vMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5D5E528EC379D00DF34A7 /* vMainViewController.swift */; };
+		BDA5D5E828EC379D00DF34A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDA5D5E728EC379D00DF34A7 /* Assets.xcassets */; };
+		BDA5D5EB28EC379D00DF34A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA5D5E928EC379D00DF34A7 /* Main.storyboard */; };
+		BDA5D61A28EC37F400DF34A7 /* mpg123.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA5D60628EC37E100DF34A7 /* mpg123.framework */; };
+		BDA5D61B28EC37F400DF34A7 /* mpg123.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BDA5D60628EC37E100DF34A7 /* mpg123.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BDA5D61C28EC37F400DF34A7 /* out123.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA5D60A28EC37E100DF34A7 /* out123.framework */; };
+		BDA5D61D28EC37F400DF34A7 /* out123.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BDA5D60A28EC37E100DF34A7 /* out123.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BDA5D61E28EC37F400DF34A7 /* syn123.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA5D60E28EC37E100DF34A7 /* syn123.framework */; };
+		BDA5D61F28EC37F400DF34A7 /* syn123.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BDA5D60E28EC37E100DF34A7 /* syn123.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BDEB5DA228EC4F7800FDC353 /* cPlaybackOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB5DA128EC4F7800FDC353 /* cPlaybackOperation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDA5D60128EC37E100DF34A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA5D5F228EC37E100DF34A7 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD8706222743C0CF00018E75;
+			remoteInfo = libmpg123;
+		};
+		BDA5D60328EC37E100DF34A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA5D5F228EC37E100DF34A7 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDB4B6152743C50E008FB306;
+			remoteInfo = libcompat;
+		};
+		BDA5D60528EC37E100DF34A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA5D5F228EC37E100DF34A7 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD32114A2743E7CC00E576CB;
+			remoteInfo = mpg123;
+		};
+		BDA5D60728EC37E100DF34A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA5D5F228EC37E100DF34A7 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDAF17B028EA295F003328DF;
+			remoteInfo = libout123;
+		};
+		BDA5D60928EC37E100DF34A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA5D5F228EC37E100DF34A7 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDB736AD28EAE2B30022D468;
+			remoteInfo = out123;
+		};
+		BDA5D60B28EC37E100DF34A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA5D5F228EC37E100DF34A7 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDAF17E928EA3276003328DF;
+			remoteInfo = libsyn123;
+		};
+		BDA5D60D28EC37E100DF34A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA5D5F228EC37E100DF34A7 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDAF17FA28EA33DB003328DF;
+			remoteInfo = syn123;
+		};
+		BDA5D60F28EC37E100DF34A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA5D5F228EC37E100DF34A7 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDB7369A28EADFFB0022D468;
+			remoteInfo = coreaudio;
+		};
+		BDA5D61128EC37E100DF34A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA5D5F228EC37E100DF34A7 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDB736A328EAE1110022D468;
+			remoteInfo = openal;
+		};
+		BDA5D61328EC37E100DF34A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA5D5F228EC37E100DF34A7 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD01EFA528EB1D9500A346BF;
+			remoteInfo = dummy;
+		};
+		BDA5D61528EC37E100DF34A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA5D5F228EC37E100DF34A7 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDB736F128EB002D0022D468;
+			remoteInfo = out123c;
+		};
+		BDA5D61728EC37E100DF34A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDA5D5F228EC37E100DF34A7 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD01EF7E28EB0E3300A346BF;
+			remoteInfo = mpg123c;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BDA5D62028EC37F400DF34A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BDA5D61D28EC37F400DF34A7 /* out123.framework in Embed Frameworks */,
+				BDA5D61F28EC37F400DF34A7 /* syn123.framework in Embed Frameworks */,
+				BDA5D61B28EC37F400DF34A7 /* mpg123.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BD25FB1228EC6E1900D4D313 /* mpg123+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "mpg123+Utils.swift"; sourceTree = "<group>"; };
+		BDA5D5E028EC379D00DF34A7 /* playsoundSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = playsoundSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDA5D5E328EC379D00DF34A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDA5D5E528EC379D00DF34A7 /* vMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vMainViewController.swift; sourceTree = "<group>"; };
+		BDA5D5E728EC379D00DF34A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDA5D5EA28EC379D00DF34A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDA5D5EC28EC379D00DF34A7 /* playsoundSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = playsoundSwift.entitlements; sourceTree = "<group>"; };
+		BDA5D5F228EC37E100DF34A7 /* mpg123.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mpg123.xcodeproj; path = ../mpg123/mpg123.xcodeproj; sourceTree = "<group>"; };
+		BDEB5DA128EC4F7800FDC353 /* cPlaybackOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cPlaybackOperation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDA5D5DD28EC379D00DF34A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA5D61C28EC37F400DF34A7 /* out123.framework in Frameworks */,
+				BDA5D61E28EC37F400DF34A7 /* syn123.framework in Frameworks */,
+				BDA5D61A28EC37F400DF34A7 /* mpg123.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDA5D5D728EC379D00DF34A7 = {
+			isa = PBXGroup;
+			children = (
+				BDA5D5F228EC37E100DF34A7 /* mpg123.xcodeproj */,
+				BDA5D5E228EC379D00DF34A7 /* playsoundSwift */,
+				BDA5D5E128EC379D00DF34A7 /* Products */,
+				BDA5D61928EC37F400DF34A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BDA5D5E128EC379D00DF34A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDA5D5E028EC379D00DF34A7 /* playsoundSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDA5D5E228EC379D00DF34A7 /* playsoundSwift */ = {
+			isa = PBXGroup;
+			children = (
+				BDA5D5E328EC379D00DF34A7 /* AppDelegate.swift */,
+				BD25FB1228EC6E1900D4D313 /* mpg123+Utils.swift */,
+				BDEB5DA128EC4F7800FDC353 /* cPlaybackOperation.swift */,
+				BDA5D5E528EC379D00DF34A7 /* vMainViewController.swift */,
+				BDA5D5E728EC379D00DF34A7 /* Assets.xcassets */,
+				BDA5D5E928EC379D00DF34A7 /* Main.storyboard */,
+				BDA5D5EC28EC379D00DF34A7 /* playsoundSwift.entitlements */,
+			);
+			path = playsoundSwift;
+			sourceTree = "<group>";
+		};
+		BDA5D5F328EC37E100DF34A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDA5D60228EC37E100DF34A7 /* libmpg123.a */,
+				BDA5D60428EC37E100DF34A7 /* libcompat.a */,
+				BDA5D60628EC37E100DF34A7 /* mpg123.framework */,
+				BDA5D60828EC37E100DF34A7 /* libout123.a */,
+				BDA5D60A28EC37E100DF34A7 /* out123.framework */,
+				BDA5D60C28EC37E100DF34A7 /* libsyn123.a */,
+				BDA5D60E28EC37E100DF34A7 /* syn123.framework */,
+				BDA5D61028EC37E100DF34A7 /* output_coreaudio.so */,
+				BDA5D61228EC37E100DF34A7 /* output_openal.so */,
+				BDA5D61428EC37E100DF34A7 /* output_dummy.so */,
+				BDA5D61628EC37E100DF34A7 /* out123 */,
+				BDA5D61828EC37E100DF34A7 /* mpg123 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDA5D61928EC37F400DF34A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDA5D5DF28EC379D00DF34A7 /* playsoundSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDA5D5EF28EC379D00DF34A7 /* Build configuration list for PBXNativeTarget "playsoundSwift" */;
+			buildPhases = (
+				BDA5D5DC28EC379D00DF34A7 /* Sources */,
+				BDA5D5DD28EC379D00DF34A7 /* Frameworks */,
+				BDA5D5DE28EC379D00DF34A7 /* Resources */,
+				BDA5D62028EC37F400DF34A7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = playsoundSwift;
+			productName = playsoundSwift;
+			productReference = BDA5D5E028EC379D00DF34A7 /* playsoundSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDA5D5D828EC379D00DF34A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					BDA5D5DF28EC379D00DF34A7 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = BDA5D5DB28EC379D00DF34A7 /* Build configuration list for PBXProject "playsoundSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDA5D5D728EC379D00DF34A7;
+			productRefGroup = BDA5D5E128EC379D00DF34A7 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BDA5D5F328EC37E100DF34A7 /* Products */;
+					ProjectRef = BDA5D5F228EC37E100DF34A7 /* mpg123.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BDA5D5DF28EC379D00DF34A7 /* playsoundSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BDA5D60228EC37E100DF34A7 /* libmpg123.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmpg123.a;
+			remoteRef = BDA5D60128EC37E100DF34A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDA5D60428EC37E100DF34A7 /* libcompat.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcompat.a;
+			remoteRef = BDA5D60328EC37E100DF34A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDA5D60628EC37E100DF34A7 /* mpg123.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = mpg123.framework;
+			remoteRef = BDA5D60528EC37E100DF34A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDA5D60828EC37E100DF34A7 /* libout123.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libout123.a;
+			remoteRef = BDA5D60728EC37E100DF34A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDA5D60A28EC37E100DF34A7 /* out123.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = out123.framework;
+			remoteRef = BDA5D60928EC37E100DF34A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDA5D60C28EC37E100DF34A7 /* libsyn123.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsyn123.a;
+			remoteRef = BDA5D60B28EC37E100DF34A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDA5D60E28EC37E100DF34A7 /* syn123.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = syn123.framework;
+			remoteRef = BDA5D60D28EC37E100DF34A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDA5D61028EC37E100DF34A7 /* output_coreaudio.so */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = output_coreaudio.so;
+			remoteRef = BDA5D60F28EC37E100DF34A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDA5D61228EC37E100DF34A7 /* output_openal.so */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = output_openal.so;
+			remoteRef = BDA5D61128EC37E100DF34A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDA5D61428EC37E100DF34A7 /* output_dummy.so */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = output_dummy.so;
+			remoteRef = BDA5D61328EC37E100DF34A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDA5D61628EC37E100DF34A7 /* out123 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = out123;
+			remoteRef = BDA5D61528EC37E100DF34A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BDA5D61828EC37E100DF34A7 /* mpg123 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = mpg123;
+			remoteRef = BDA5D61728EC37E100DF34A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDA5D5DE28EC379D00DF34A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA5D5E828EC379D00DF34A7 /* Assets.xcassets in Resources */,
+				BDA5D5EB28EC379D00DF34A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDA5D5DC28EC379D00DF34A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA5D5E628EC379D00DF34A7 /* vMainViewController.swift in Sources */,
+				BDEB5DA228EC4F7800FDC353 /* cPlaybackOperation.swift in Sources */,
+				BDA5D5E428EC379D00DF34A7 /* AppDelegate.swift in Sources */,
+				BD25FB1328EC6E1900D4D313 /* mpg123+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BDA5D5E928EC379D00DF34A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDA5D5EA28EC379D00DF34A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDA5D5ED28EC379D00DF34A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDA5D5EE28EC379D00DF34A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BDA5D5F028EC379D00DF34A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = playsoundSwift/playsoundSwift.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = playsoundSwift/Info.plist;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.mpg123.playsoundSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BDA5D5F128EC379D00DF34A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = playsoundSwift/playsoundSwift.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = playsoundSwift/Info.plist;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.mpg123.playsoundSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDA5D5DB28EC379D00DF34A7 /* Build configuration list for PBXProject "playsoundSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDA5D5ED28EC379D00DF34A7 /* Debug */,
+				BDA5D5EE28EC379D00DF34A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDA5D5EF28EC379D00DF34A7 /* Build configuration list for PBXNativeTarget "playsoundSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDA5D5F028EC379D00DF34A7 /* Debug */,
+				BDA5D5F128EC379D00DF34A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDA5D5D828EC379D00DF34A7 /* Project object */;
+}

@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD0679FB28EB4BC900961B92 /* mpg123.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD61A93628EB4B3A00FC338F /* mpg123.framework */; };
+		BD0679FC28EB4BC900961B92 /* mpg123.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD61A93628EB4B3A00FC338F /* mpg123.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD0679FE28EB4BCE00961B92 /* out123.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD61A93A28EB4B3A00FC338F /* out123.framework */; };
+		BD0679FF28EB4BCE00961B92 /* out123.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD61A93A28EB4B3A00FC338F /* out123.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD067A0028EB4BD200961B92 /* syn123.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD61A93E28EB4B3A00FC338F /* syn123.framework */; };
+		BD067A0128EB4BD200961B92 /* syn123.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD61A93E28EB4B3A00FC338F /* syn123.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD067AFD28EB93E400961B92 /* cPlaybackOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BD067AFC28EB93E400961B92 /* cPlaybackOperation.m */; };
+		BD61A91128EB44DD00FC338F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD61A91028EB44DD00FC338F /* AppDelegate.m */; };
+		BD61A91428EB44DD00FC338F /* vMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD61A91328EB44DD00FC338F /* vMainViewController.m */; };
+		BD61A91628EB44DE00FC338F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD61A91528EB44DE00FC338F /* Assets.xcassets */; };
+		BD61A91928EB44DE00FC338F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD61A91728EB44DE00FC338F /* Main.storyboard */; };
+		BD61A91B28EB44DE00FC338F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD61A91A28EB44DE00FC338F /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD61A93128EB4B3A00FC338F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD61A92228EB4B3A00FC338F /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD8706222743C0CF00018E75;
+			remoteInfo = libmpg123;
+		};
+		BD61A93328EB4B3A00FC338F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD61A92228EB4B3A00FC338F /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDB4B6152743C50E008FB306;
+			remoteInfo = libcompat;
+		};
+		BD61A93528EB4B3A00FC338F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD61A92228EB4B3A00FC338F /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD32114A2743E7CC00E576CB;
+			remoteInfo = mpg123;
+		};
+		BD61A93728EB4B3A00FC338F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD61A92228EB4B3A00FC338F /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDAF17B028EA295F003328DF;
+			remoteInfo = libout123;
+		};
+		BD61A93928EB4B3A00FC338F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD61A92228EB4B3A00FC338F /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDB736AD28EAE2B30022D468;
+			remoteInfo = out123;
+		};
+		BD61A93B28EB4B3A00FC338F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD61A92228EB4B3A00FC338F /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDAF17E928EA3276003328DF;
+			remoteInfo = libsyn123;
+		};
+		BD61A93D28EB4B3A00FC338F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD61A92228EB4B3A00FC338F /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDAF17FA28EA33DB003328DF;
+			remoteInfo = syn123;
+		};
+		BD61A93F28EB4B3A00FC338F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD61A92228EB4B3A00FC338F /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDB7369A28EADFFB0022D468;
+			remoteInfo = coreaudio;
+		};
+		BD61A94128EB4B3A00FC338F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD61A92228EB4B3A00FC338F /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDB736A328EAE1110022D468;
+			remoteInfo = openal;
+		};
+		BD61A94328EB4B3A00FC338F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD61A92228EB4B3A00FC338F /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD01EFA528EB1D9500A346BF;
+			remoteInfo = dummy;
+		};
+		BD61A94528EB4B3A00FC338F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD61A92228EB4B3A00FC338F /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BDB736F128EB002D0022D468;
+			remoteInfo = out123c;
+		};
+		BD61A94728EB4B3A00FC338F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD61A92228EB4B3A00FC338F /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD01EF7E28EB0E3300A346BF;
+			remoteInfo = mpg123c;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD0679FD28EB4BC900961B92 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BD0679FF28EB4BCE00961B92 /* out123.framework in Embed Frameworks */,
+				BD067A0128EB4BD200961B92 /* syn123.framework in Embed Frameworks */,
+				BD0679FC28EB4BC900961B92 /* mpg123.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BD067AFB28EB93E400961B92 /* cPlaybackOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cPlaybackOperation.h; sourceTree = "<group>"; };
+		BD067AFC28EB93E400961B92 /* cPlaybackOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cPlaybackOperation.m; sourceTree = "<group>"; };
+		BD61A90C28EB44DD00FC338F /* playsoundObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = playsoundObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD61A90F28EB44DD00FC338F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BD61A91028EB44DD00FC338F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BD61A91228EB44DD00FC338F /* vMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vMainViewController.h; sourceTree = "<group>"; };
+		BD61A91328EB44DD00FC338F /* vMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vMainViewController.m; sourceTree = "<group>"; };
+		BD61A91528EB44DE00FC338F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD61A91828EB44DE00FC338F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD61A91A28EB44DE00FC338F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD61A91C28EB44DE00FC338F /* playsoundObjectiveC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = playsoundObjectiveC.entitlements; sourceTree = "<group>"; };
+		BD61A92228EB4B3A00FC338F /* mpg123.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mpg123.xcodeproj; path = ../mpg123/mpg123.xcodeproj; sourceTree = "<group>"; };
+		BDB0D98828F310A600F74EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD61A90928EB44DD00FC338F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD0679FE28EB4BCE00961B92 /* out123.framework in Frameworks */,
+				BD067A0028EB4BD200961B92 /* syn123.framework in Frameworks */,
+				BD0679FB28EB4BC900961B92 /* mpg123.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD0679FA28EB4BC900961B92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD61A90328EB44DD00FC338F = {
+			isa = PBXGroup;
+			children = (
+				BD61A92228EB4B3A00FC338F /* mpg123.xcodeproj */,
+				BD61A90E28EB44DD00FC338F /* playsoundObjectiveC */,
+				BD61A90D28EB44DD00FC338F /* Products */,
+				BD0679FA28EB4BC900961B92 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD61A90D28EB44DD00FC338F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD61A90C28EB44DD00FC338F /* playsoundObjectiveC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD61A90E28EB44DD00FC338F /* playsoundObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				BD61A90F28EB44DD00FC338F /* AppDelegate.h */,
+				BD61A91028EB44DD00FC338F /* AppDelegate.m */,
+				BD067AFB28EB93E400961B92 /* cPlaybackOperation.h */,
+				BD067AFC28EB93E400961B92 /* cPlaybackOperation.m */,
+				BD61A91228EB44DD00FC338F /* vMainViewController.h */,
+				BD61A91328EB44DD00FC338F /* vMainViewController.m */,
+				BD61A91528EB44DE00FC338F /* Assets.xcassets */,
+				BD61A91728EB44DE00FC338F /* Main.storyboard */,
+				BD61A91A28EB44DE00FC338F /* main.m */,
+				BDB0D98828F310A600F74EEC /* Info.plist */,
+				BD61A91C28EB44DE00FC338F /* playsoundObjectiveC.entitlements */,
+			);
+			path = playsoundObjectiveC;
+			sourceTree = "<group>";
+		};
+		BD61A92328EB4B3A00FC338F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD61A93228EB4B3A00FC338F /* libmpg123.a */,
+				BD61A93428EB4B3A00FC338F /* libcompat.a */,
+				BD61A93628EB4B3A00FC338F /* mpg123.framework */,
+				BD61A93828EB4B3A00FC338F /* libout123.a */,
+				BD61A93A28EB4B3A00FC338F /* out123.framework */,
+				BD61A93C28EB4B3A00FC338F /* libsyn123.a */,
+				BD61A93E28EB4B3A00FC338F /* syn123.framework */,
+				BD61A94028EB4B3A00FC338F /* output_coreaudio.so */,
+				BD61A94228EB4B3A00FC338F /* output_openal.so */,
+				BD61A94428EB4B3A00FC338F /* output_dummy.so */,
+				BD61A94628EB4B3A00FC338F /* out123 */,
+				BD61A94828EB4B3A00FC338F /* mpg123 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD61A90B28EB44DD00FC338F /* playsoundObjectiveC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD61A91F28EB44DE00FC338F /* Build configuration list for PBXNativeTarget "playsoundObjectiveC" */;
+			buildPhases = (
+				BD61A90828EB44DD00FC338F /* Sources */,
+				BD61A90928EB44DD00FC338F /* Frameworks */,
+				BD61A90A28EB44DD00FC338F /* Resources */,
+				BD0679FD28EB4BC900961B92 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = playsoundObjectiveC;
+			productName = playsoundObjectiveC;
+			productReference = BD61A90C28EB44DD00FC338F /* playsoundObjectiveC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD61A90428EB44DD00FC338F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					BD61A90B28EB44DD00FC338F = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = BD61A90728EB44DD00FC338F /* Build configuration list for PBXProject "playsoundObjectiveC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD61A90328EB44DD00FC338F;
+			productRefGroup = BD61A90D28EB44DD00FC338F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BD61A92328EB4B3A00FC338F /* Products */;
+					ProjectRef = BD61A92228EB4B3A00FC338F /* mpg123.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BD61A90B28EB44DD00FC338F /* playsoundObjectiveC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BD61A93228EB4B3A00FC338F /* libmpg123.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmpg123.a;
+			remoteRef = BD61A93128EB4B3A00FC338F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD61A93428EB4B3A00FC338F /* libcompat.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcompat.a;
+			remoteRef = BD61A93328EB4B3A00FC338F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD61A93628EB4B3A00FC338F /* mpg123.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = mpg123.framework;
+			remoteRef = BD61A93528EB4B3A00FC338F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD61A93828EB4B3A00FC338F /* libout123.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libout123.a;
+			remoteRef = BD61A93728EB4B3A00FC338F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD61A93A28EB4B3A00FC338F /* out123.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = out123.framework;
+			remoteRef = BD61A93928EB4B3A00FC338F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD61A93C28EB4B3A00FC338F /* libsyn123.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsyn123.a;
+			remoteRef = BD61A93B28EB4B3A00FC338F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD61A93E28EB4B3A00FC338F /* syn123.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = syn123.framework;
+			remoteRef = BD61A93D28EB4B3A00FC338F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD61A94028EB4B3A00FC338F /* output_coreaudio.so */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = output_coreaudio.so;
+			remoteRef = BD61A93F28EB4B3A00FC338F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD61A94228EB4B3A00FC338F /* output_openal.so */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = output_openal.so;
+			remoteRef = BD61A94128EB4B3A00FC338F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD61A94428EB4B3A00FC338F /* output_dummy.so */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = output_dummy.so;
+			remoteRef = BD61A94328EB4B3A00FC338F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD61A94628EB4B3A00FC338F /* out123 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = out123;
+			remoteRef = BD61A94528EB4B3A00FC338F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD61A94828EB4B3A00FC338F /* mpg123 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = mpg123;
+			remoteRef = BD61A94728EB4B3A00FC338F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD61A90A28EB44DD00FC338F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD61A91628EB44DE00FC338F /* Assets.xcassets in Resources */,
+				BD61A91928EB44DE00FC338F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD61A90828EB44DD00FC338F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD61A91428EB44DD00FC338F /* vMainViewController.m in Sources */,
+				BD067AFD28EB93E400961B92 /* cPlaybackOperation.m in Sources */,
+				BD61A91B28EB44DE00FC338F /* main.m in Sources */,
+				BD61A91128EB44DD00FC338F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD61A91728EB44DE00FC338F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD61A91828EB44DE00FC338F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD61A91D28EB44DE00FC338F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BD61A91E28EB44DE00FC338F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BD61A92028EB44DE00FC338F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = playsoundObjectiveC/playsoundObjectiveC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = playsoundObjectiveC/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.mpg123.playsoundObjectiveC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		BD61A92128EB44DE00FC338F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = playsoundObjectiveC/playsoundObjectiveC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = playsoundObjectiveC/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.mpg123.playsoundObjectiveC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD61A90728EB44DD00FC338F /* Build configuration list for PBXProject "playsoundObjectiveC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD61A91D28EB44DE00FC338F /* Debug */,
+				BD61A91E28EB44DE00FC338F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD61A91F28EB44DE00FC338F /* Build configuration list for PBXNativeTarget "playsoundObjectiveC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD61A92028EB44DE00FC338F /* Debug */,
+				BD61A92128EB44DE00FC338F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD61A90428EB44DD00FC338F /* Project object */;
+}
