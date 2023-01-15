@@ -37,7 +37,9 @@
 ASM_NAME(dct36_3dnow):
 	pushl %ebp
 	movl %esp,%ebp
-#if defined(PIC) && defined(__APPLE__)
+// Not entirely sure about this PIC_GLOBAL_PTR here, but this is highly
+// irrelevant, anyway. Anyone building 3DNow code for Android or Apple systems?
+#ifdef PIC_GLOBAL_PTR
 	sub $4,%esp
 #endif
 	pushl %esi
@@ -47,7 +49,7 @@ ASM_NAME(dct36_3dnow):
 	#define _EBX_ %edi
 	PREPARE_GOT
 	GET_GOT
-#if defined(PIC) && defined(__APPLE__)
+#ifdef PIC_GLOBAL_PTR
 	#define _COS9_ 0(%edi)
 	#define _tfcos36_ 0(%eax)
 	mov GLOBAL_VAR_PTR(tfcos36), %eax
@@ -189,7 +191,7 @@ ASM_NAME(dct36_3dnow):
 	movq %mm2,%mm4
 	pfadd %mm3,%mm4
 	movq %mm7,%mm5
-#if defined(PIC) && defined(__APPLE__)
+#ifdef PIC_GLOBAL_PTR
 	mov -4(%ebp),%eax
 #endif
 	punpckldq 0+_tfcos36_,%mm5
@@ -219,7 +221,7 @@ ASM_NAME(dct36_3dnow):
 	pfsub %mm2,%mm4
 	movq %mm7,%mm5
 	punpckldq 32+_tfcos36_,%mm5
-#if defined(PIC) && defined(__APPLE__)
+#ifdef PIC_GLOBAL_PTR
 	mov 8(%ebp),%eax
 #endif
 	pfmul %mm5,%mm4
@@ -267,7 +269,7 @@ ASM_NAME(dct36_3dnow):
 	movq %mm2,%mm4
 	pfadd %mm3,%mm4
 	movq %mm7,%mm5
-#if defined(PIC) && defined(__APPLE__)
+#ifdef PIC_GLOBAL_PTR
 	mov -4(%ebp),%eax
 #endif
 	punpckldq 4+_tfcos36_,%mm5
@@ -297,7 +299,7 @@ ASM_NAME(dct36_3dnow):
 	pfsub %mm2,%mm4
 	movq %mm7,%mm5
 	punpckldq 28+_tfcos36_,%mm5
-#if defined(PIC) && defined(__APPLE__)
+#ifdef PIC_GLOBAL_PTR
 	mov 8(%ebp),%eax
 #endif
 	pfmul %mm5,%mm4
@@ -358,7 +360,7 @@ ASM_NAME(dct36_3dnow):
 	movq %mm2,%mm4
 	pfadd %mm3,%mm4
 	movq %mm7,%mm5
-#if defined(PIC) && defined(__APPLE__)
+#ifdef PIC_GLOBAL_PTR
 	mov -4(%ebp),%eax
 #endif
 	punpckldq 8+_tfcos36_,%mm5
@@ -388,7 +390,7 @@ ASM_NAME(dct36_3dnow):
 	pfsub %mm2,%mm4
 	movq %mm7,%mm5
 	punpckldq 24+_tfcos36_,%mm5
-#if defined(PIC) && defined(__APPLE__)
+#ifdef PIC_GLOBAL_PTR
 	mov 8(%ebp),%eax
 #endif
 	pfmul %mm5,%mm4
@@ -448,7 +450,7 @@ ASM_NAME(dct36_3dnow):
 	movq %mm2,%mm4
 	pfadd %mm3,%mm4
 	movq %mm7,%mm5
-#if defined(PIC) && defined(__APPLE__)
+#ifdef PIC_GLOBAL_PTR
 	mov -4(%ebp),%eax
 #endif
 	punpckldq 12+_tfcos36_,%mm5
@@ -478,7 +480,7 @@ ASM_NAME(dct36_3dnow):
 	pfsub %mm2,%mm4
 	movq %mm7,%mm5
 	punpckldq 20+_tfcos36_,%mm5
-#if defined(PIC) && defined(__APPLE__)
+#ifdef PIC_GLOBAL_PTR
 	mov 8(%ebp),%eax
 #endif
 	pfmul %mm5,%mm4
@@ -514,7 +516,7 @@ ASM_NAME(dct36_3dnow):
 	movq 64(%eax),%mm3
 	pfadd %mm3,%mm4
 	movq %mm7,%mm5
-#if defined(PIC) && defined(__APPLE__)
+#ifdef PIC_GLOBAL_PTR
 	mov -4(%ebp),%eax
 #endif
 	punpckldq 16+_tfcos36_,%mm5
