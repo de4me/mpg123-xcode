@@ -44,6 +44,10 @@
 /* Define if .align takes 3 for alignment of 2^3=8 bytes instead of 8. */
 /* #undef ASMALIGN_EXP */
 
+/* No suffixed symbols for large file support (only alias for backwards
+   compat.) */
+#define BUILD_NO_LARGENAME 1
+
 /* Define if __attribute__((aligned(16))) shall be used */
 #define CCALIGN 1
 
@@ -212,6 +216,9 @@
 /* Define to 1 if you have the `sched_setscheduler' function. */
 /* #undef HAVE_SCHED_SETSCHEDULER */
 
+/* Define to 1 if you have the `setenv' function. */
+#define HAVE_SETENV 1
+
 /* Define to 1 if you have the `setlocale' function. */
 #define HAVE_SETLOCALE 1
 
@@ -314,6 +321,9 @@
 /* Define to 1 if you have the <unistd.h> header file. */
 #define HAVE_UNISTD_H 1
 
+/* Define to 1 if you have the `unsetenv' function. */
+#define HAVE_UNSETENV 1
+
 /* Define to 1 if you have the <wchar.h> header file. */
 #define HAVE_WCHAR_H 1
 
@@ -325,6 +335,9 @@
 
 /* Define to 1 if you have the <wctype.h> header file. */
 #define HAVE_WCTYPE_H 1
+
+/* Define to 1 if you have the <wincon.h> header file. */
+#define HAVE_WINCON_H 1
 
 /* Define to 1 if you have the <windows.h> header file. */
 /* #undef HAVE_WINDOWS_H */
@@ -365,6 +378,15 @@
 
 /* Define to for new net123 network stack. */
 #define NET123 1
+
+/* Define for executable-based networking (for HTTPS). */
+#define NET123_EXEC 1
+
+/* Define for winhttp networking (for HTTPS). */
+/* #undef NET123_WINHTTP */
+
+/* Define for wininet networking (for HTTPS). */
+/* #undef NET123_WININET */
 
 /* Define if network support is enabled. */
 #define NETWORK 1
