@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,12 @@
 		BD067AE228EB7AA600961B92 /* libmpg123.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD067A6928EB760300961B92 /* libmpg123.a */; };
 		BD067AEE28EB7AFE00961B92 /* scan.c in Sources */ = {isa = PBXBuildFile; fileRef = BD067A8528EB761300961B92 /* scan.c */; };
 		BD067AEF28EB7B0C00961B92 /* libmpg123.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD067A6928EB760300961B92 /* libmpg123.a */; };
+		BD07594C2AC235520071A91F /* mpg123_to_wav_replaced_io.c in Sources */ = {isa = PBXBuildFile; fileRef = BD0759402AC234F60071A91F /* mpg123_to_wav_replaced_io.c */; };
+		BD07594D2AC235790071A91F /* libmpg123.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD067A6928EB760300961B92 /* libmpg123.a */; };
+		BD07594E2AC235790071A91F /* libout123.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD067A6F28EB760300961B92 /* libout123.a */; };
+		BD07595A2AC235CD0071A91F /* mpg123_to_wav_reader64.c in Sources */ = {isa = PBXBuildFile; fileRef = BD0759322AC234E30071A91F /* mpg123_to_wav_reader64.c */; };
+		BD07595B2AC235EA0071A91F /* libmpg123.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD067A6928EB760300961B92 /* libmpg123.a */; };
+		BD07595C2AC235EA0071A91F /* libout123.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD067A6F28EB760300961B92 /* libout123.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +182,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		BD0759432AC2351C0071A91F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		BD0759512AC235C20071A91F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -194,6 +218,10 @@
 		BD067ACC28EB7A0F00961B92 /* mpg123_to_out123 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mpg123_to_out123; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD067ADA28EB7A7B00961B92 /* mpglib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mpglib; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD067AE728EB7AF100961B92 /* scan */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = scan; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD0759322AC234E30071A91F /* mpg123_to_wav_reader64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mpg123_to_wav_reader64.c; sourceTree = "<group>"; };
+		BD0759402AC234F60071A91F /* mpg123_to_wav_replaced_io.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mpg123_to_wav_replaced_io.c; sourceTree = "<group>"; };
+		BD0759452AC2351C0071A91F /* mpg123_to_wav_replaced_io */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mpg123_to_wav_replaced_io; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD0759532AC235C20071A91F /* mpg123_to_wav_reader64 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mpg123_to_wav_reader64; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +283,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD0759422AC2351C0071A91F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD07594D2AC235790071A91F /* libmpg123.a in Frameworks */,
+				BD07594E2AC235790071A91F /* libout123.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD0759502AC235C20071A91F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD07595B2AC235EA0071A91F /* libmpg123.a in Frameworks */,
+				BD07595C2AC235EA0071A91F /* libout123.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -278,6 +324,8 @@
 				BD067ACC28EB7A0F00961B92 /* mpg123_to_out123 */,
 				BD067ADA28EB7A7B00961B92 /* mpglib */,
 				BD067AE728EB7AF100961B92 /* scan */,
+				BD0759452AC2351C0071A91F /* mpg123_to_wav_replaced_io */,
+				BD0759532AC235C20071A91F /* mpg123_to_wav_reader64 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -309,6 +357,8 @@
 				BD067A8228EB761300961B92 /* feedseek.c */,
 				BD067A8728EB761300961B92 /* id3dump.c */,
 				BD067A8628EB761300961B92 /* mpg123_to_out123.c */,
+				BD0759322AC234E30071A91F /* mpg123_to_wav_reader64.c */,
+				BD0759402AC234F60071A91F /* mpg123_to_wav_replaced_io.c */,
 				BD067A8128EB761300961B92 /* mpglib.c */,
 				BD067A8528EB761300961B92 /* scan.c */,
 			);
@@ -445,6 +495,40 @@
 			productReference = BD067AE728EB7AF100961B92 /* scan */;
 			productType = "com.apple.product-type.tool";
 		};
+		BD0759442AC2351C0071A91F /* mpg123_to_wav_replaced_io */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD0759492AC2351C0071A91F /* Build configuration list for PBXNativeTarget "mpg123_to_wav_replaced_io" */;
+			buildPhases = (
+				BD0759412AC2351C0071A91F /* Sources */,
+				BD0759422AC2351C0071A91F /* Frameworks */,
+				BD0759432AC2351C0071A91F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mpg123_to_wav_replaced_io;
+			productName = mpg123_to_wav_replaced_io;
+			productReference = BD0759452AC2351C0071A91F /* mpg123_to_wav_replaced_io */;
+			productType = "com.apple.product-type.tool";
+		};
+		BD0759522AC235C20071A91F /* mpg123_to_wav_reader64 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD0759572AC235C20071A91F /* Build configuration list for PBXNativeTarget "mpg123_to_wav_reader64" */;
+			buildPhases = (
+				BD07594F2AC235C20071A91F /* Sources */,
+				BD0759502AC235C20071A91F /* Frameworks */,
+				BD0759512AC235C20071A91F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mpg123_to_wav_reader64;
+			productName = mpg123_to_wav_reader64;
+			productReference = BD0759532AC235C20071A91F /* mpg123_to_wav_reader64 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -452,7 +536,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					BD067A4E28EB75EF00961B92 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -474,6 +558,12 @@
 					};
 					BD067AE628EB7AF100961B92 = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					BD0759442AC2351C0071A91F = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					BD0759522AC235C20071A91F = {
+						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
@@ -503,6 +593,8 @@
 				BD067ACB28EB7A0F00961B92 /* mpg123_to_out123 */,
 				BD067AD928EB7A7B00961B92 /* mpglib */,
 				BD067AE628EB7AF100961B92 /* scan */,
+				BD0759442AC2351C0071A91F /* mpg123_to_wav_replaced_io */,
+				BD0759522AC235C20071A91F /* mpg123_to_wav_reader64 */,
 			);
 		};
 /* End PBXProject section */
@@ -648,6 +740,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD067AEE28EB7AFE00961B92 /* scan.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD0759412AC2351C0071A91F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD07594C2AC235520071A91F /* mpg123_to_wav_replaced_io.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD07594F2AC235C20071A91F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD07595A2AC235CD0071A91F /* mpg123_to_wav_reader64.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -876,6 +984,38 @@
 			};
 			name = Release;
 		};
+		BD07594A2AC2351C0071A91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD07594B2AC2351C0071A91F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BD0759582AC235C20071A91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD0759592AC235C20071A91F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -947,6 +1087,24 @@
 			buildConfigurations = (
 				BD067AEC28EB7AF100961B92 /* Debug */,
 				BD067AED28EB7AF100961B92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD0759492AC2351C0071A91F /* Build configuration list for PBXNativeTarget "mpg123_to_wav_replaced_io" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD07594A2AC2351C0071A91F /* Debug */,
+				BD07594B2AC2351C0071A91F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD0759572AC235C20071A91F /* Build configuration list for PBXNativeTarget "mpg123_to_wav_reader64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD0759582AC235C20071A91F /* Debug */,
+				BD0759592AC235C20071A91F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

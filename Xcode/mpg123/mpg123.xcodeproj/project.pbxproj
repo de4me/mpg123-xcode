@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -135,6 +135,12 @@
 		BD055F5928EAC73700B41500 /* mpg123lib_intern.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB4B5B42743C1D1008FB306 /* mpg123lib_intern.h */; };
 		BD055F5A28EAC73700B41500 /* parse.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB4B59D2743C1D1008FB306 /* parse.h */; };
 		BD067AF328EB841A00961B92 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD067AF228EB841A00961B92 /* OpenAL.framework */; };
+		BD07592A2AC223120071A91F /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0759292AC222F00071A91F /* version.h */; };
+		BD07592B2AC223150071A91F /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0759292AC222F00071A91F /* version.h */; };
+		BD07592D2AC223710071A91F /* lfs_wrap.h in Headers */ = {isa = PBXBuildFile; fileRef = BD07592C2AC223710071A91F /* lfs_wrap.h */; };
+		BD07592E2AC223710071A91F /* lfs_wrap.h in Headers */ = {isa = PBXBuildFile; fileRef = BD07592C2AC223710071A91F /* lfs_wrap.h */; };
+		BD0759302AC2238C0071A91F /* lfs_wrap.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5D02743C1D1008FB306 /* lfs_wrap.c */; };
+		BD0759312AC2238E0071A91F /* lfs_wrap.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5D02743C1D1008FB306 /* lfs_wrap.c */; };
 		BD2410C8288C0CB800BE66F1 /* net123.h in Headers */ = {isa = PBXBuildFile; fileRef = BD2410C2288C0CB800BE66F1 /* net123.h */; };
 		BD2410C9288C0CB800BE66F1 /* net123.h in Headers */ = {isa = PBXBuildFile; fileRef = BD2410C2288C0CB800BE66F1 /* net123.h */; };
 		BD3211442743E43D00E576CB /* wpathconv.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB4B60D2743C486008FB306 /* wpathconv.h */; };
@@ -152,7 +158,6 @@
 		BD32115D2743E86700E576CB /* layer1.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5AD2743C1D1008FB306 /* layer1.c */; };
 		BD32115E2743E86900E576CB /* layer2.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B58C2743C1D1008FB306 /* layer2.c */; };
 		BD32115F2743E86C00E576CB /* layer3.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5FC2743C1D1008FB306 /* layer3.c */; };
-		BD3211602743E87000E576CB /* lfs_alias.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5872743C1D1008FB306 /* lfs_alias.c */; };
 		BD3211612743E87400E576CB /* libmpg123.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5D82743C1D1008FB306 /* libmpg123.c */; };
 		BD3211622743E87A00E576CB /* ntom.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5FB2743C1D1008FB306 /* ntom.c */; };
 		BD3211632743E87D00E576CB /* optimize.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5CA2743C1D1008FB306 /* optimize.c */; };
@@ -177,7 +182,6 @@
 		BD3680C52743CCF600884439 /* layer3.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5FC2743C1D1008FB306 /* layer3.c */; };
 		BD3680C62743CF3700884439 /* icy.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5782743C1D1008FB306 /* icy.c */; };
 		BD3680C72743CF3B00884439 /* icy2utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B58E2743C1D1008FB306 /* icy2utf8.c */; };
-		BD3680C82743CF6500884439 /* lfs_alias.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5872743C1D1008FB306 /* lfs_alias.c */; };
 		BD3680C92743CF8C00884439 /* ntom.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5FB2743C1D1008FB306 /* ntom.c */; };
 		BD3680CA2743CFA800884439 /* stringbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5B72743C1D1008FB306 /* stringbuf.c */; };
 		BD3680CB2743CFB700884439 /* synth_8bit.c in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5BF2743C1D1008FB306 /* synth_8bit.c */; };
@@ -547,6 +551,8 @@
 		BD067A3C28EB74AB00961B92 /* id3dump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = id3dump.c; sourceTree = "<group>"; };
 		BD067A3D28EB74AB00961B92 /* extract_frames.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = extract_frames.c; sourceTree = "<group>"; };
 		BD067AF228EB841A00961B92 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		BD0759292AC222F00071A91F /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		BD07592C2AC223710071A91F /* lfs_wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lfs_wrap.h; sourceTree = "<group>"; };
 		BD2410C0288C0CB800BE66F1 /* net123_winhttp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net123_winhttp.c; sourceTree = "<group>"; };
 		BD2410C1288C0CB800BE66F1 /* net123_wininet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net123_wininet.c; sourceTree = "<group>"; };
 		BD2410C2288C0CB800BE66F1 /* net123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net123.h; sourceTree = "<group>"; };
@@ -566,7 +572,6 @@
 		BD3680FB2743D47800884439 /* httpget.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = httpget.c; sourceTree = "<group>"; };
 		BD3680FC2743D47800884439 /* genre.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = genre.c; sourceTree = "<group>"; };
 		BD3680FD2743D47800884439 /* httpget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = httpget.h; sourceTree = "<group>"; };
-		BD3680FE2743D47800884439 /* intsym.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = intsym.h; sourceTree = "<group>"; };
 		BD3680FF2743D47800884439 /* getlopt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = getlopt.c; sourceTree = "<group>"; };
 		BD3681002743D47800884439 /* filters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filters.h; sourceTree = "<group>"; };
 		BD3681012743D47800884439 /* filters.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = filters.c; sourceTree = "<group>"; };
@@ -678,7 +683,6 @@
 		BDB4B5842743C1D1008FB306 /* dither.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dither.h; sourceTree = "<group>"; };
 		BDB4B5852743C1D1008FB306 /* dct64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dct64.c; sourceTree = "<group>"; };
 		BDB4B5862743C1D1008FB306 /* synth_neon64_accurate.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = synth_neon64_accurate.S; sourceTree = "<group>"; };
-		BDB4B5872743C1D1008FB306 /* lfs_alias.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lfs_alias.c; sourceTree = "<group>"; };
 		BDB4B5882743C1D1008FB306 /* synth_3dnowext.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = synth_3dnowext.S; sourceTree = "<group>"; };
 		BDB4B5892743C1D1008FB306 /* synth_neon_accurate.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = synth_neon_accurate.S; sourceTree = "<group>"; };
 		BDB4B58A2743C1D1008FB306 /* optimize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = optimize.h; sourceTree = "<group>"; };
@@ -987,7 +991,6 @@
 				BD3680FA2743D47800884439 /* getlopt.h */,
 				BD3680FB2743D47800884439 /* httpget.c */,
 				BD3680FD2743D47800884439 /* httpget.h */,
-				BD3680FE2743D47800884439 /* intsym.h */,
 				BDB4B56F2743C1D1008FB306 /* libmpg123 */,
 				BDAF177C28EA28B9003328DF /* libout123 */,
 				BDAF17CE28EA3154003328DF /* libsyn123 */,
@@ -1018,6 +1021,7 @@
 				BD3681092743D49200884439 /* term.c */,
 				BD3681062743D49200884439 /* term.h */,
 				BD2410D5288C0E3F00BE66F1 /* terms.h */,
+				BD0759292AC222F00071A91F /* version.h */,
 				BD36811A2743D4A000884439 /* win32_net.c */,
 				BD3681182743D4A000884439 /* win32_support.c */,
 				BD3681192743D4A000884439 /* win32_support.h */,
@@ -1220,8 +1224,8 @@
 				BDB4B5AD2743C1D1008FB306 /* layer1.c */,
 				BDB4B58C2743C1D1008FB306 /* layer2.c */,
 				BDB4B5FC2743C1D1008FB306 /* layer3.c */,
-				BDB4B5872743C1D1008FB306 /* lfs_alias.c */,
 				BDB4B5D02743C1D1008FB306 /* lfs_wrap.c */,
+				BD07592C2AC223710071A91F /* lfs_wrap.h */,
 				BDB4B5D82743C1D1008FB306 /* libmpg123.c */,
 				BDB4B5962743C1D1008FB306 /* mangle.h */,
 				BDB4B5EF2743C1D1008FB306 /* mpeghead.h */,
@@ -1372,6 +1376,7 @@
 				BD32116D2743E99800E576CB /* fmt123.h in Headers */,
 				BD055F3A28EAC73700B41500 /* l12tabs.h in Headers */,
 				BD055F4628EAC73700B41500 /* getbits.h in Headers */,
+				BD07592E2AC223710071A91F /* lfs_wrap.h in Headers */,
 				BD055F3D28EAC73700B41500 /* dither.h in Headers */,
 				BD2410C9288C0CB800BE66F1 /* net123.h in Headers */,
 				BD055F4928EAC73700B41500 /* frame.h in Headers */,
@@ -1383,6 +1388,7 @@
 				BD055F5028EAC73700B41500 /* sample.h in Headers */,
 				BD055F5128EAC73700B41500 /* costabs.h in Headers */,
 				BD055F4A28EAC73700B41500 /* mpeghead.h in Headers */,
+				BD07592B2AC223150071A91F /* version.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1407,6 +1413,7 @@
 				BDC3353628EE9992002427FD /* config.h in Headers */,
 				BDB4B5FF2743C2ED008FB306 /* fmt123.h in Headers */,
 				BD055F1F28EAC73500B41500 /* synth_sse3d.h in Headers */,
+				BD07592A2AC223120071A91F /* version.h in Headers */,
 				BD055F1A28EAC73500B41500 /* l3tabs.h in Headers */,
 				BD055F2228EAC73500B41500 /* dither_impl.h in Headers */,
 				BD055F1828EAC73500B41500 /* synth_mono.h in Headers */,
@@ -1423,6 +1430,7 @@
 				BD055F2028EAC73500B41500 /* getbits.h in Headers */,
 				BD055F2D28EAC73500B41500 /* index.h in Headers */,
 				BD055F1C28EAC73500B41500 /* synth_ntom.h in Headers */,
+				BD07592D2AC223710071A91F /* lfs_wrap.h in Headers */,
 				BD055F3028EAC73500B41500 /* optimize.h in Headers */,
 				BD055F2B28EAC73500B41500 /* costabs.h in Headers */,
 				BD055F1D28EAC73500B41500 /* init_costabs.h in Headers */,
@@ -1770,7 +1778,7 @@
 		BD87061A2743C0CF00018E75 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					BD01EF7D28EB0E3300A346BF = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -1971,7 +1979,6 @@
 			files = (
 				BD4AFBD92847B2140031BA45 /* equalizer_3dnow.S in Sources */,
 				BD4AFBB02847966A0031BA45 /* synth_stereo_neon64_float.S in Sources */,
-				BD3211602743E87000E576CB /* lfs_alias.c in Sources */,
 				BD32115E2743E86900E576CB /* layer2.c in Sources */,
 				BD4AFBBB2847A4EC0031BA45 /* check_neon.S in Sources */,
 				BD4AFBAB284796250031BA45 /* synth_neon64_accurate.S in Sources */,
@@ -2032,6 +2039,7 @@
 				BD3211562743E84600E576CB /* feature.c in Sources */,
 				BD4AFBE22847B3A30031BA45 /* synth_mmx.S in Sources */,
 				BD4AFBC02847AE100031BA45 /* synth_stereo_x86_64_float.S in Sources */,
+				BD0759302AC2238C0071A91F /* lfs_wrap.c in Sources */,
 				BD3211662743E88B00E576CB /* stringbuf.c in Sources */,
 				BD3211692743E89F00E576CB /* synth_s32.c in Sources */,
 				BD4AFBC62847AF810031BA45 /* synth_x86_64_float.S in Sources */,
@@ -2070,7 +2078,6 @@
 				BD3680CA2743CFA800884439 /* stringbuf.c in Sources */,
 				BD4AFBD02847B1290031BA45 /* synth_i586.S in Sources */,
 				BD4AFBF02847B5180031BA45 /* synth_sse_accurate.S in Sources */,
-				BD3680C82743CF6500884439 /* lfs_alias.c in Sources */,
 				BD4AFBE02847B3770031BA45 /* tabinit_mmx.S in Sources */,
 				BD4AFBDA2847B2690031BA45 /* dct36_3dnow.S in Sources */,
 				BD4AFBD62847B1B10031BA45 /* dct64_3dnow.S in Sources */,
@@ -2110,6 +2117,7 @@
 				BD3680C42743CCF200884439 /* layer2.c in Sources */,
 				BD4AFBE32847B3A40031BA45 /* synth_mmx.S in Sources */,
 				BD4AFBC12847AE110031BA45 /* synth_stereo_x86_64_float.S in Sources */,
+				BD0759312AC2238E0071A91F /* lfs_wrap.c in Sources */,
 				BD3680C32743CCEE00884439 /* layer1.c in Sources */,
 				BDB4B6072743C367008FB306 /* tabinit.c in Sources */,
 				BD4AFBC72847AF810031BA45 /* synth_x86_64_float.S in Sources */,
@@ -2364,7 +2372,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.31.3;
+				MARKETING_VERSION = 1.32.1;
 				MODULEMAP_FILE = mpg123.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = org.mpg123.mpg123;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -2393,7 +2401,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.31.3;
+				MARKETING_VERSION = 1.32.1;
 				MODULEMAP_FILE = mpg123.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = org.mpg123.mpg123;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -2647,7 +2655,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.31.3;
+				MARKETING_VERSION = 1.32.1;
 				MODULEMAP_FILE = syn123.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = org.mpg123.syn123;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -2676,7 +2684,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.31.3;
+				MARKETING_VERSION = 1.32.1;
 				MODULEMAP_FILE = syn123.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = org.mpg123.syn123;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -2794,7 +2802,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.31.3;
+				MARKETING_VERSION = 1.32.1;
 				MODULEMAP_FILE = out123.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = org.mpg123.out123;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -2828,7 +2836,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.31.3;
+				MARKETING_VERSION = 1.32.1;
 				MODULEMAP_FILE = out123.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = org.mpg123.out123;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
