@@ -13,7 +13,7 @@
 
 #if defined(OPT_NEON) || defined(OPT_NEON64)
 
-extern void check_neon(void);
+extern void INT123_check_neon(void);
 
 #ifndef _M_ARM
 static sigjmp_buf jmpbuf;
@@ -30,7 +30,7 @@ static void mpg123_arm_catch_sigill(int sig)
 #endif
 }
 
-unsigned int getcpuflags(struct cpuflags* cf)
+unsigned int INT123_getcpuflags(struct cpuflags* cf)
 {
 #ifndef _M_ARM
 	struct sigaction act, act_old;
@@ -42,7 +42,7 @@ unsigned int getcpuflags(struct cpuflags* cf)
 	cf->has_neon = 0;
 	
 	if(!sigsetjmp(jmpbuf, 1)) {
-		check_neon();
+		INT123_check_neon();
 		cf->has_neon = 1;
 	}
 	
@@ -52,7 +52,7 @@ unsigned int getcpuflags(struct cpuflags* cf)
 
 	if (!setjmp(jmpbuf)) {
 		signal(SIGILL, mpg123_arm_catch_sigill);
-		check_neon();
+		INT123_check_neon();
 		cf->has_neon = 1;
 	}
 

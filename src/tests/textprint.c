@@ -69,7 +69,7 @@ const struct test_string test_input[] =
 };
 
 
-int main()
+int main(int argc, char **argv)
 {
 	char *dst = NULL;
 	const size_t test_count = sizeof(test_input)/sizeof(*test_input);
