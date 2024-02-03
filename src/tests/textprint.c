@@ -8,8 +8,8 @@
 	initially written by Thomas Orgis
 */
 
-#include "mpg123app.h"
-#include "local.h"
+#include "../mpg123app.h"
+#include "../local.h"
 
 // A number of UTF-8 strings to test.
 
@@ -69,7 +69,7 @@ const struct test_string test_input[] =
 };
 
 
-int main(int argc, char **argv)
+int main()
 {
 	char *dst = NULL;
 	const size_t test_count = sizeof(test_input)/sizeof(*test_input);

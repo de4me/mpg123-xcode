@@ -1,7 +1,7 @@
 /*
 	text: Test text transformations in libmpg123 (conversion to UTF-8).
 
-	copyright 2009 by the mpg123 project - free software under the terms of the LGPL 2.1
+	copyright 2009-2023 by the mpg123 project - free software under the terms of the LGPL 2.1
 	see COPYING and AUTHORS files in distribution or http://mpg123.org
 	initially written by Thomas Orgis
 
@@ -9,7 +9,7 @@
 */
 
 #include <mpg123.h>
-#include <compat.h>
+#include "../compat/compat.h"
 
 #include "testtext.h"
 
@@ -52,7 +52,7 @@ int check_string(const char* name, enum mpg123_text_encoding enc, const unsigned
 	}
 	else
 	{
-		printf("FAIL (%"SIZE_P" vs. %"SIZE_P")\n", (size_p)sb.fill, (size_p)sizeof(utf8));
+		printf("FAIL (%zu vs. %zu)\n", sb.fill, sizeof(utf8));
 		ret = 1;
 	}
 
@@ -62,7 +62,7 @@ int check_string(const char* name, enum mpg123_text_encoding enc, const unsigned
 
 /* We test: latin1, cp1252, utf8 and all of utf16be/le with and without BOM.
    Everything should succeed -- except utf16le without BOM. */
-int main(int argc, char **argv)
+int main()
 {
 	int ret = 0;
 	mpg123_string trans_utf16le;

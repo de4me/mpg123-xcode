@@ -24,7 +24,7 @@ const long brate = 48000;
 const synoff ins = 12637;
 const synoff outs = 75822;
 
-int main(int argc, char **argv)
+int main()
 {
 #ifdef SYN123_PORTABLE_API
 	synoff outs2 = syn123_resample_total64(arate,brate,ins);

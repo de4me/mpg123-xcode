@@ -1,3 +1,41 @@
+1.32.4
+------
+- build:
+-- Reorganize shared headers, API headers into src/include.
+-- Use relative include paths, avoiding internal directories in
+   CPPFLAGS except for config.h.
+-- Group C99 feature checks and make several standard headers
+   mandatory.
+-- Get rid of SIZE_P, OFF_P and friends.
+-- Only enforce dummy module together with libout123, to be able
+   to build individual modules using --disable-components logic.
+- out123:
+-- added --libversion
+- libmpg123:
+-- Avoid indirect branches into the assembly routines by using C wrappers
+   also for dct36, relieving us of the need to care for bti / endbr
+   instructions for control flow integrity.
+
+1.32.3
+------
+- ports/cmake: Only enable modules with GetThreadErrorMode() on Windows.
+- compat: Define EOVERFLOW for ancient Windows toolchains.
+- libmpg123, libsyn123: always ifdef LFS_LARGEFILE_64 (not just if)
+- libsyn123: re-introduce _32 wrappers in addition to suffix-less ones
+  (regression from 1.31, bug 363)
+
+1.32.2
+------
+- libmpg123: Re-introduce _64 symbols on native 64 bit offset platforms. This
+  was a regression since 1.31 series. Sorry, too much cleanup, not enough
+  testing.
+- build:
+-- Better O_LARGEFILE logic, avoiding redefintion.
+- ports/cmake:
+-- Require C99 (bug 360, among other points, thanks to Ozkan Sezer).
+-- Fix broken O_LARGEFILE logic (bug 360).
+-- Typo fix and cleanup, also manual SSE switch for Android on old x86 (bug 359).
+
 1.32.1
 ------
 - Include man pages again in tarball and install. We cannot avoid the empty

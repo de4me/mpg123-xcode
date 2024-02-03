@@ -36,7 +36,7 @@ AMPTEST(amptest_8, 8, 16, MPG123_ENC_SIGNED_8)
 AMPTEST(amptest_16, 16, 32, MPG123_ENC_SIGNED_16)
 
 
-int main(int argc, char **argv)
+int main()
 {
 	int ret = 0;
 	fprintf(stderr, "create handle\n");
