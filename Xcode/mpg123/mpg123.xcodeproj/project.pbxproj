@@ -639,7 +639,6 @@
 		BD702A7C2AD06972008DD1E5 /* legacy_module.c in Sources */ = {isa = PBXBuildFile; fileRef = BDAF17AB28EA28B9003328DF /* legacy_module.c */; };
 		BD702A7D2AD06973008DD1E5 /* legacy_module.c in Sources */ = {isa = PBXBuildFile; fileRef = BDAF17AB28EA28B9003328DF /* legacy_module.c */; };
 		BD702A7E2AD069B1008DD1E5 /* libcompat-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3965942AC9D1B60048E7EA /* libcompat-iOS.a */; };
-		BD702A7F2AD06A19008DD1E5 /* openal.c in Sources */ = {isa = PBXBuildFile; fileRef = BDAF179C28EA28B9003328DF /* openal.c */; };
 		BD702A812AD06A64008DD1E5 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD702A802AD06A64008DD1E5 /* OpenAL.framework */; };
 		BD8E2A4C28EB01B400B3F983 /* out123.c in Sources */ = {isa = PBXBuildFile; fileRef = BD3681082743D49200884439 /* out123.c */; };
 		BD8E2A4D28EB025200B3F983 /* libmpg123.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8706222743C0CF00018E75 /* libmpg123.a */; };
@@ -731,6 +730,7 @@
 		BDB736EB28EAFDAD0022D468 /* modules_dir.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB736E328EAECA30022D468 /* modules_dir.m */; };
 		BDB736EC28EAFDB60022D468 /* modules_dir.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB736E528EAECBC0022D468 /* modules_dir.h */; };
 		BDC3353628EE9992002427FD /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB4B5FE2743C266008FB306 /* config.h */; };
+		BDD05EDE2B6EE21200E40A85 /* coreaudio.c in Sources */ = {isa = PBXBuildFile; fileRef = BDAF179328EA28B9003328DF /* coreaudio.c */; };
 		BDD9666C28F343D100885CE5 /* synth_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5A22743C1D1008FB306 /* synth_x86_64.S */; };
 		BDD9666D28F343D200885CE5 /* synth_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5A22743C1D1008FB306 /* synth_x86_64.S */; };
 		BDD9666E28F3445900885CE5 /* dct64_x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5F32743C1D1008FB306 /* dct64_x86_64.S */; };
@@ -3176,9 +3176,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD3966522AC9D1D50048E7EA /* wav.c in Sources */,
+				BDD05EDE2B6EE21200E40A85 /* coreaudio.c in Sources */,
 				BD3966532AC9D1D50048E7EA /* libout123.c in Sources */,
 				BD3966542AC9D1D50048E7EA /* hextxt.c in Sources */,
-				BD702A7F2AD06A19008DD1E5 /* openal.c in Sources */,
 				BD702A7D2AD06973008DD1E5 /* legacy_module.c in Sources */,
 				BD3966552AC9D1D50048E7EA /* xfermem.c in Sources */,
 				BD3966562AC9D1D50048E7EA /* buffer.c in Sources */,
