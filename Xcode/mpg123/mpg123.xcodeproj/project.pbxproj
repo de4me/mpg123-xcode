@@ -23,6 +23,22 @@
 			name = ALL;
 			productName = ALL;
 		};
+		BDD05E1C2B6ED32E00E40A85 /* ALL-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BDD05E1F2B6ED32E00E40A85 /* Build configuration list for PBXAggregateTarget "ALL-iOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+				BDD05E212B6ED34C00E40A85 /* PBXTargetDependency */,
+				BDD05E232B6ED34C00E40A85 /* PBXTargetDependency */,
+				BDD05E252B6ED34C00E40A85 /* PBXTargetDependency */,
+				BDD05E272B6ED34C00E40A85 /* PBXTargetDependency */,
+				BDD05E292B6ED34C00E40A85 /* PBXTargetDependency */,
+				BDD05E2B2B6ED34C00E40A85 /* PBXTargetDependency */,
+			);
+			name = "ALL-iOS";
+			productName = "ALL-iOS";
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -876,6 +892,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = BDB4B6142743C50E008FB306;
 			remoteInfo = libcompat;
+		};
+		BDD05E202B6ED34C00E40A85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD87061A2743C0CF00018E75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD3965082AC9D1A70048E7EA;
+			remoteInfo = "libmpg123-iOS";
+		};
+		BDD05E222B6ED34C00E40A85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD87061A2743C0CF00018E75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD3966192AC9D1CB0048E7EA;
+			remoteInfo = "libout123-iOS";
+		};
+		BDD05E242B6ED34C00E40A85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD87061A2743C0CF00018E75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD3966672AC9D1EE0048E7EA;
+			remoteInfo = "libsyn123-iOS";
+		};
+		BDD05E262B6ED34C00E40A85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD87061A2743C0CF00018E75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD3965952AC9D1C00048E7EA;
+			remoteInfo = "mpg123-iOS";
+		};
+		BDD05E282B6ED34C00E40A85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD87061A2743C0CF00018E75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD3966382AC9D1D50048E7EA;
+			remoteInfo = "out123-iOS";
+		};
+		BDD05E2A2B6ED34C00E40A85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD87061A2743C0CF00018E75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD39669F2AC9D29E0048E7EA;
+			remoteInfo = "syn123-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -2606,6 +2664,9 @@
 					BDB736F028EB002D0022D468 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
+					BDD05E1C2B6ED32E00E40A85 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 				};
 			};
 			buildConfigurationList = BD87061D2743C0CF00018E75 /* Build configuration list for PBXProject "mpg123" */;
@@ -2641,6 +2702,7 @@
 				BD3966382AC9D1D50048E7EA /* out123-iOS */,
 				BD3966672AC9D1EE0048E7EA /* libsyn123-iOS */,
 				BD39669F2AC9D29E0048E7EA /* syn123-iOS */,
+				BDD05E1C2B6ED32E00E40A85 /* ALL-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -3434,6 +3496,36 @@
 			isa = PBXTargetDependency;
 			target = BDB4B6142743C50E008FB306 /* libcompat */;
 			targetProxy = BDB4B6192743C518008FB306 /* PBXContainerItemProxy */;
+		};
+		BDD05E212B6ED34C00E40A85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD3965082AC9D1A70048E7EA /* libmpg123-iOS */;
+			targetProxy = BDD05E202B6ED34C00E40A85 /* PBXContainerItemProxy */;
+		};
+		BDD05E232B6ED34C00E40A85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD3966192AC9D1CB0048E7EA /* libout123-iOS */;
+			targetProxy = BDD05E222B6ED34C00E40A85 /* PBXContainerItemProxy */;
+		};
+		BDD05E252B6ED34C00E40A85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD3966672AC9D1EE0048E7EA /* libsyn123-iOS */;
+			targetProxy = BDD05E242B6ED34C00E40A85 /* PBXContainerItemProxy */;
+		};
+		BDD05E272B6ED34C00E40A85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD3965952AC9D1C00048E7EA /* mpg123-iOS */;
+			targetProxy = BDD05E262B6ED34C00E40A85 /* PBXContainerItemProxy */;
+		};
+		BDD05E292B6ED34C00E40A85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD3966382AC9D1D50048E7EA /* out123-iOS */;
+			targetProxy = BDD05E282B6ED34C00E40A85 /* PBXContainerItemProxy */;
+		};
+		BDD05E2B2B6ED34C00E40A85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD39669F2AC9D29E0048E7EA /* syn123-iOS */;
+			targetProxy = BDD05E2A2B6ED34C00E40A85 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -4269,6 +4361,22 @@
 			};
 			name = Release;
 		};
+		BDD05E1D2B6ED32E00E40A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDD05E1E2B6ED32E00E40A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -4457,6 +4565,15 @@
 			buildConfigurations = (
 				BDB736F628EB002D0022D468 /* Debug */,
 				BDB736F728EB002D0022D468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD05E1F2B6ED32E00E40A85 /* Build configuration list for PBXAggregateTarget "ALL-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD05E1D2B6ED32E00E40A85 /* Debug */,
+				BDD05E1E2B6ED32E00E40A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
