@@ -5,7 +5,7 @@
 //  Created by DE4ME on 04.10.2022.
 //
 
-import Cocoa;
+import Foundation;
 import mpg123;
 import out123;
 
@@ -41,6 +41,7 @@ class cPlaybackOperation: Operation {
     
     override func main() {
         do {
+            print("BEGIN");
             var channels: Int32 = 0;
             var encoding: Int32 = 0;
             var framesize: Int32 = 0;
@@ -50,28 +51,28 @@ class cPlaybackOperation: Operation {
             let output = self.output;
             let decoder = self.decoder;
             guard let mh = mpg123_new(nil, &error) else {
-                throw mpg123Error(code: error);
+                throw mpg123Error.mpg(error);
             }
             defer {
                 mpg123_delete(mh);
             }
             guard let ao = out123_new() else {
-                throw out123Error(OUT123_DOOM);
+                throw mpg123Error(OUT123_DOOM);
             }
             defer {
                 out123_del(ao);
             }
-            guard mpg123_open(mh, infile) == MPG123_OK.rawValue,
-                  mpg123_getformat(mh, &rate, &channels, &encoding) == MPG123_OK.rawValue
+            guard mpg123_open(mh, infile) == MPG123_OK,
+                  mpg123_getformat(mh, &rate, &channels, &encoding) == MPG123_OK
             else {
-                throw mpg123Error(mh);
+                throw mpg123Error(mpg: mh);
             }
-            guard out123_open(ao, output, decoder) == OUT123_OK.rawValue else {
-                throw out123Error(ao);
+            guard out123_open(ao, output, decoder) == OUT123_OK else {
+                throw mpg123Error(out: ao);
             }
             var output_buffer: UnsafeMutablePointer<CChar>?;
             var decoder_buffer: UnsafeMutablePointer<CChar>?;
-            if out123_driver_info(ao, &output_buffer, &decoder_buffer) == OUT123_OK.rawValue {
+            if out123_driver_info(ao, &output_buffer, &decoder_buffer) == OUT123_OK {
                 self.output = String(utf8Buffer: output_buffer);
                 self.decoder = String(utf8Buffer: decoder_buffer);
 #if DEBUG
@@ -79,7 +80,7 @@ class cPlaybackOperation: Operation {
                 print("Effective output file:   \( self.decoder ?? "<nil> (default)" )");
 #endif
             } else {
-                print("warning: out123_driver_info() \(out123Error(ao))");
+                print("warning: out123_driver_info() \(mpg123Error(out: ao))");
             }
             mpg123_format_none(mh);
             mpg123_format(mh, rate, channels, encoding);
@@ -87,10 +88,10 @@ class cPlaybackOperation: Operation {
             let encname = out123_enc_name(encoding);
             print("Playing with \(channels) channels and \(rate) Hz, encoding \( String(utf8Buffer: encname) ?? "?").");
 #endif
-            guard out123_start(ao, rate, channels, encoding) == OUT123_OK.rawValue,
-                  out123_getformat(ao, nil, nil, nil, &framesize) == OUT123_OK.rawValue
+            guard out123_start(ao, rate, channels, encoding) == OUT123_OK,
+                  out123_getformat(ao, nil, nil, nil, &framesize) == OUT123_OK
             else {
-                throw out123Error(ao);
+                throw mpg123Error(out: ao);
             }
             let buffer_size = mpg123_outblock(mh);
             let buffer = malloc(buffer_size);
@@ -103,7 +104,7 @@ class cPlaybackOperation: Operation {
             var done: Int = 0;
             var samples: Int64 = 0;
 #if DEBUG
-            print("Now playing: \(self.url.path)");
+            print("Now playing: \(self.url.lastPathComponent)");
 #endif
             repeat {
                 error = mpg123_read(mh, buffer, buffer_size, &done);
@@ -114,18 +115,19 @@ class cPlaybackOperation: Operation {
                 }
 #endif
                 samples += Int64(played) / Int64(framesize);
-            } while !self.isCancelled && done > 0 && error == MPG123_OK.rawValue;
+            } while !self.isCancelled && done > 0 && error == MPG123_OK;
 #if DEBUG
-            print("Playback completed: \(self.url.path)");
-            if error != MPG123_DONE.rawValue, error != MPG123_OK.rawValue {
-                let result = error == MPG123_ERR.rawValue ? mpg123Error(mh) : mpg123Error(code: error);
+            print("Playback completed: \(self.url.lastPathComponent)");
+            if error != MPG123_DONE, error != MPG123_OK {
+                let result = error == MPG123_ERR ? mpg123Error(mpg: mh) : mpg123Error.mpg(error);
                 print("warning: decoding ended prematurely because: \(result)");
             }
             print("\(samples) samples written.");
 #endif
+            print("END");
         }
         catch {
-            print(error);
+            print(error.localizedDescription);
         }
     }
     
