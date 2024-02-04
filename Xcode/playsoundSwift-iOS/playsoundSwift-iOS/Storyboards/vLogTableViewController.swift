@@ -18,9 +18,13 @@ enum Message {
 
 
 class vLoggingViewController: UIViewController {
+    
+    //MARK: VAR
 	
 	private var logController: vLogTableViewController!;
 
+    //MARK: OVERRIDE
+    
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated);
 		DbgLog.begin(self.logController);
@@ -39,46 +43,56 @@ class vLoggingViewController: UIViewController {
 			break;
 		}
 	}
+    
 }
 
 
 class vLogTableViewController: UITableViewController {
-	
+
+    //MARK: CONST
+    
+    static private let mutex = DispatchSemaphore(value: 1);
+    
+    //MARK: STATIC
+    
 	static private var current: vLogTableViewController?;
 	static private var currentMessagesArray: [Message] = [];
-	static private let mutex = DispatchSemaphore(value: 1);
-	
+
+	//MARK: VAR
 	
 	private var messagesArray: [Message] = [];
 	private var timer: Timer?;
 	
+    //MARK: STATIC FUNC
 	
 	static func begin(_ current: vLogTableViewController) {
-		vLogTableViewController.mutex.wait();
-		vLogTableViewController.currentMessagesArray.removeAll();
-		vLogTableViewController.current = current;
-		vLogTableViewController.mutex.signal();
+		Self.mutex.wait();
+		Self.currentMessagesArray.removeAll();
+		Self.current = current;
+		Self.mutex.signal();
 	}
 	
 	static func end() {
-		vLogTableViewController.mutex.wait();
-		vLogTableViewController.current = nil;
-		vLogTableViewController.mutex.signal();
+		Self.mutex.wait();
+		Self.current = nil;
+		Self.mutex.signal();
 	}
 	
 	static func printInfo(_ text: String) {
-		vLogTableViewController.addMessage(.info(text));
+		Self.addMessage(.info(text));
 	}
 	
 	static func printError(_ text: String) {
-		vLogTableViewController.addMessage(.error(text));
+		Self.addMessage(.error(text));
 	}
 	
 	static func addMessage(_ message: Message) {
-		vLogTableViewController.mutex.wait();
-		vLogTableViewController.currentMessagesArray.append(message);
-		vLogTableViewController.mutex.signal();
+		Self.mutex.wait();
+		Self.currentMessagesArray.append(message);
+		Self.mutex.signal();
 	}
+    
+    //MARK: OVERRIDE
 	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated);
@@ -125,7 +139,6 @@ class vLogTableViewController: UITableViewController {
 				self.tableView.scrollToRow(at: index, at: .bottom, animated: false);
 			}
 		}
-
 	}
 
     // MARK: - Table view data source

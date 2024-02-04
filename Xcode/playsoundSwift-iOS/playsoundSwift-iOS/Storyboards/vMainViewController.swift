@@ -15,7 +15,11 @@ class vMainViewController: vLoggingViewController {
     
     @IBOutlet var decodersSegmentedControl: UISegmentedControl!;
     
+    //MARK: VAR
+    
     var operation: cPlaybackOperation?;
+    
+    //MARK: GETTER
     
     var availableDecoders: [String] {
         var decoders: [String] = [];
@@ -30,6 +34,8 @@ class vMainViewController: vLoggingViewController {
         }
         return decoders;
     }
+    
+    //MARK: OVERRIDE
 
     override func viewDidLoad() {
         super.viewDidLoad();
@@ -39,6 +45,8 @@ class vMainViewController: vLoggingViewController {
         }
         self.decodersSegmentedControl.selectedSegmentIndex = 0;
     }
+    
+    //MARK: ACTION
 
     @IBAction func playClick(_ sender: Any) {
         guard let url = Bundle.main.url(forResource: "sweep", withExtension: "mp3") else {
@@ -97,7 +105,7 @@ class vMainViewController: vLoggingViewController {
         }
         let message = array.isEmpty ? "Empty" : array.joined(separator: "\n\n");
         let title = String(format: "mpg123 API: %i\nout123 API: %i\nsyn123 API: %i", MPG123_API_VERSION, OUT123_API_VERSION, SYN123_API_VERSION);
-        let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert);
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert);
         let close = UIAlertAction(title: "Close", style: .default);
         alert.addAction(close);
         self.present(alert, animated: true);
