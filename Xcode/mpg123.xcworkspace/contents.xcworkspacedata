@@ -14,6 +14,9 @@
       location = "group:playsoundSwift/playsoundSwift.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:playsoundSwift-iOS/playsoundSwift-iOS.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:playsoundObjectiveC/playsoundObjectiveC.xcodeproj">
    </FileRef>
 </Workspace>
