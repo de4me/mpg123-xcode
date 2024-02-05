@@ -113,9 +113,9 @@ class vLogTableViewController: UITableViewController {
 	}
 	
 	@objc private func updateLog(_ timer: Timer) {
-		vLogTableViewController.mutex.wait();
-		let array = vLogTableViewController.currentMessagesArray;
-		vLogTableViewController.mutex.signal();
+		Self.mutex.wait();
+		let array = Self.currentMessagesArray;
+		Self.mutex.signal();
 		guard array.count > 0, array.count != self.messagesArray.count else {
 			return;
 		}
