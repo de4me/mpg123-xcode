@@ -524,7 +524,6 @@
 		BD3966762AC9D1EE0048E7EA /* volume.c in Sources */ = {isa = PBXBuildFile; fileRef = BDAF17D228EA3154003328DF /* volume.c */; };
 		BD3966772AC9D1EE0048E7EA /* libsyn123.c in Sources */ = {isa = PBXBuildFile; fileRef = BDAF17D828EA3154003328DF /* libsyn123.c */; };
 		BD3966A42AC9D29E0048E7EA /* compat.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB4B6102743C486008FB306 /* compat.h */; };
-		BD3966A62AC9D29E0048E7EA /* syn123.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAF17D428EA3154003328DF /* syn123.h */; };
 		BD3966A72AC9D29E0048E7EA /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB4B5FE2743C266008FB306 /* config.h */; };
 		BD3966A92AC9D29E0048E7EA /* g711_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAF17DA28EA3154003328DF /* g711_impl.h */; };
 		BD3966AA2AC9D29E0048E7EA /* syn123.h in Headers */ = {isa = PBXBuildFile; fileRef = BD055ED228EAB64B00B41500 /* syn123.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -684,7 +683,6 @@
 		BDAF180528EA3417003328DF /* geiger.c in Sources */ = {isa = PBXBuildFile; fileRef = BDAF17D628EA3154003328DF /* geiger.c */; };
 		BDAF180628EA3417003328DF /* pinknoise.c in Sources */ = {isa = PBXBuildFile; fileRef = BDAF17D128EA3154003328DF /* pinknoise.c */; };
 		BDAF180728EA3417003328DF /* resample.c in Sources */ = {isa = PBXBuildFile; fileRef = BDAF17D728EA3154003328DF /* resample.c */; };
-		BDAF180C28EA356D003328DF /* syn123.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAF17D428EA3154003328DF /* syn123.h */; };
 		BDAF181028EA3770003328DF /* mpg123.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD32114A2743E7CC00E576CB /* mpg123.framework */; };
 		BDAF181128EA3C36003328DF /* syn123_int.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAF17D928EA3154003328DF /* syn123_int.h */; };
 		BDAF181228EA3C36003328DF /* syn123_int.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAF17D928EA3154003328DF /* syn123_int.h */; };
@@ -1090,7 +1088,6 @@
 		BDAF17D128EA3154003328DF /* pinknoise.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinknoise.c; sourceTree = "<group>"; };
 		BDAF17D228EA3154003328DF /* volume.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = volume.c; sourceTree = "<group>"; };
 		BDAF17D328EA3154003328DF /* sampleconv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sampleconv.c; sourceTree = "<group>"; };
-		BDAF17D428EA3154003328DF /* syn123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syn123.h; sourceTree = "<group>"; };
 		BDAF17D528EA3154003328DF /* filter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filter.c; sourceTree = "<group>"; };
 		BDAF17D628EA3154003328DF /* geiger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = geiger.c; sourceTree = "<group>"; };
 		BDAF17D728EA3154003328DF /* resample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = resample.c; sourceTree = "<group>"; };
@@ -1660,7 +1657,6 @@
 				BDAF17D728EA3154003328DF /* resample.c */,
 				BDAF17D328EA3154003328DF /* sampleconv.c */,
 				BDAF17D928EA3154003328DF /* syn123_int.h */,
-				BDAF17D428EA3154003328DF /* syn123.h */,
 				BDAF17D228EA3154003328DF /* volume.c */,
 			);
 			path = libsyn123;
@@ -2094,7 +2090,6 @@
 			files = (
 				BD3966A42AC9D29E0048E7EA /* compat.h in Headers */,
 				BD1C8EE32B63E5F300035740 /* mpg123.h in Headers */,
-				BD3966A62AC9D29E0048E7EA /* syn123.h in Headers */,
 				BD3966A72AC9D29E0048E7EA /* config.h in Headers */,
 				BD3966A92AC9D29E0048E7EA /* g711_impl.h in Headers */,
 				BD1C8ED72B63E56E00035740 /* fmt123.h in Headers */,
@@ -2200,7 +2195,6 @@
 			files = (
 				BD4D260F28ECCF0100A2E37F /* compat.h in Headers */,
 				BD1C8EDD2B63E5E200035740 /* mpg123.h in Headers */,
-				BDAF180C28EA356D003328DF /* syn123.h in Headers */,
 				BD4D260728ECCE0100A2E37F /* config.h in Headers */,
 				BDAF181428EA3C41003328DF /* g711_impl.h in Headers */,
 				BD1C8ECD2B63E55D00035740 /* fmt123.h in Headers */,
