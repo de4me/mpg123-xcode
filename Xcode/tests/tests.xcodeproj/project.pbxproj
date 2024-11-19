@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,6 +36,55 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BD01298D2CECA040009AEBFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F9628EACB0900B41500 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD3965862AC9D1A70048E7EA;
+			remoteInfo = "libmpg123-iOS";
+		};
+		BD01298F2CECA040009AEBFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F9628EACB0900B41500 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD3965942AC9D1B60048E7EA;
+			remoteInfo = "libcompat-iOS";
+		};
+		BD0129912CECA040009AEBFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F9628EACB0900B41500 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD3966172AC9D1C00048E7EA;
+			remoteInfo = "mpg123-iOS";
+		};
+		BD0129932CECA040009AEBFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F9628EACB0900B41500 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD3966372AC9D1CB0048E7EA;
+			remoteInfo = "libout123-iOS";
+		};
+		BD0129952CECA040009AEBFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F9628EACB0900B41500 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD3966652AC9D1D50048E7EA;
+			remoteInfo = "out123-iOS";
+		};
+		BD0129972CECA040009AEBFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F9628EACB0900B41500 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD39667C2AC9D1EE0048E7EA;
+			remoteInfo = "libsyn123-iOS";
+		};
+		BD0129992CECA040009AEBFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F9628EACB0900B41500 /* mpg123.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BD3966BC2AC9D29E0048E7EA;
+			remoteInfo = "syn123-iOS";
+		};
 		BD055F9F28EACB0900B41500 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BD055F9628EACB0900B41500 /* mpg123.xcodeproj */;
@@ -371,6 +420,13 @@
 				BD4D262428ECD27500A2E37F /* output_dummy.so */,
 				BD4D262628ECD27500A2E37F /* out123 */,
 				BD4D262828ECD27500A2E37F /* mpg123 */,
+				BD01298E2CECA040009AEBFD /* libmpg123.a */,
+				BD0129902CECA040009AEBFD /* libcompat-iOS.a */,
+				BD0129922CECA040009AEBFD /* mpg123.framework */,
+				BD0129942CECA040009AEBFD /* libout123.a */,
+				BD0129962CECA040009AEBFD /* out123.framework */,
+				BD0129982CECA040009AEBFD /* libsyn123.a */,
+				BD01299A2CECA040009AEBFD /* syn123.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -631,6 +687,55 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		BD01298E2CECA040009AEBFD /* libmpg123.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmpg123.a;
+			remoteRef = BD01298D2CECA040009AEBFD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD0129902CECA040009AEBFD /* libcompat-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcompat-iOS.a";
+			remoteRef = BD01298F2CECA040009AEBFD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD0129922CECA040009AEBFD /* mpg123.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = mpg123.framework;
+			remoteRef = BD0129912CECA040009AEBFD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD0129942CECA040009AEBFD /* libout123.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libout123.a;
+			remoteRef = BD0129932CECA040009AEBFD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD0129962CECA040009AEBFD /* out123.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = out123.framework;
+			remoteRef = BD0129952CECA040009AEBFD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD0129982CECA040009AEBFD /* libsyn123.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsyn123.a;
+			remoteRef = BD0129972CECA040009AEBFD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD01299A2CECA040009AEBFD /* syn123.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = syn123.framework;
+			remoteRef = BD0129992CECA040009AEBFD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		BD055FA028EACB0900B41500 /* libmpg123.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -857,7 +962,7 @@
 					"\"$(SRCROOT)/../mpg123/include\"",
 					"\"$(SRCROOT)/../../src\"/**",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -914,7 +1019,7 @@
 					"\"$(SRCROOT)/../../src\"/**",
 					"$(DSTROOT)/usr/local/include",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
