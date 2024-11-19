@@ -741,6 +741,10 @@
 		BDD9667528F3452A00885CE5 /* synth_neon64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5DA2743C1D1008FB306 /* synth_neon64.S */; };
 		BDD9667628F3454600885CE5 /* synth_stereo_neon64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5A02743C1D1008FB306 /* synth_stereo_neon64.S */; };
 		BDD9667728F3454700885CE5 /* synth_stereo_neon64.S in Sources */ = {isa = PBXBuildFile; fileRef = BDB4B5A02743C1D1008FB306 /* synth_stereo_neon64.S */; };
+		BDDA00162CEC7BF500EF25C3 /* aarch64_defs.h in Headers */ = {isa = PBXBuildFile; fileRef = BDDA00152CEC7BF500EF25C3 /* aarch64_defs.h */; };
+		BDDA00172CEC7BF500EF25C3 /* aarch64_defs.h in Headers */ = {isa = PBXBuildFile; fileRef = BDDA00152CEC7BF500EF25C3 /* aarch64_defs.h */; };
+		BDDA00182CEC7BF500EF25C3 /* aarch64_defs.h in Headers */ = {isa = PBXBuildFile; fileRef = BDDA00152CEC7BF500EF25C3 /* aarch64_defs.h */; };
+		BDDA00192CEC7BF500EF25C3 /* aarch64_defs.h in Headers */ = {isa = PBXBuildFile; fileRef = BDDA00152CEC7BF500EF25C3 /* aarch64_defs.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1246,6 +1250,7 @@
 		BDB736E328EAECA30022D468 /* modules_dir.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = modules_dir.m; sourceTree = "<group>"; };
 		BDB736E528EAECBC0022D468 /* modules_dir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modules_dir.h; sourceTree = "<group>"; };
 		BDB736F128EB002D0022D468 /* out123 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = out123; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDDA00152CEC7BF500EF25C3 /* aarch64_defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aarch64_defs.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1681,6 +1686,7 @@
 		BDB4B56F2743C1D1008FB306 /* libmpg123 */ = {
 			isa = PBXGroup;
 			children = (
+				BDDA00152CEC7BF500EF25C3 /* aarch64_defs.h */,
 				BDB4B5D22743C1D1008FB306 /* calctables.c */,
 				BDB4B5F52743C1D1008FB306 /* check_neon.S */,
 				BDB4B5DE2743C1D1008FB306 /* costabs.h */,
@@ -1871,6 +1877,7 @@
 				BD055F3828EAC73700B41500 /* icy2utf8.h in Headers */,
 				BD1C8EC92B63E55A00035740 /* fmt123.h in Headers */,
 				BD055F4528EAC73700B41500 /* synth_sse3d.h in Headers */,
+				BDDA00182CEC7BF500EF25C3 /* aarch64_defs.h in Headers */,
 				BD055F4B28EAC73700B41500 /* l3bandgain.h in Headers */,
 				BD055F5928EAC73700B41500 /* mpg123lib_intern.h in Headers */,
 				BD055F5828EAC73700B41500 /* id3.h in Headers */,
@@ -1947,6 +1954,7 @@
 				BD39652E2AC9D1A70048E7EA /* lfs_wrap.h in Headers */,
 				BD1C8EBD2B63E36200035740 /* swap_bytes_impl.h in Headers */,
 				BD39652F2AC9D1A70048E7EA /* optimize.h in Headers */,
+				BDDA00172CEC7BF500EF25C3 /* aarch64_defs.h in Headers */,
 				BD3965302AC9D1A70048E7EA /* costabs.h in Headers */,
 				BD3965312AC9D1A70048E7EA /* init_costabs.h in Headers */,
 				BD3965322AC9D1A70048E7EA /* synth_8bit.h in Headers */,
@@ -1987,6 +1995,7 @@
 				BD3965A42AC9D1C00048E7EA /* icy2utf8.h in Headers */,
 				BD1C8ED32B63E56A00035740 /* fmt123.h in Headers */,
 				BD3965A52AC9D1C00048E7EA /* synth_sse3d.h in Headers */,
+				BDDA00162CEC7BF500EF25C3 /* aarch64_defs.h in Headers */,
 				BD3965A72AC9D1C00048E7EA /* l3bandgain.h in Headers */,
 				BD3965A82AC9D1C00048E7EA /* mpg123lib_intern.h in Headers */,
 				BD3965A92AC9D1C00048E7EA /* id3.h in Headers */,
@@ -2141,6 +2150,7 @@
 				BD07592D2AC223710071A91F /* lfs_wrap.h in Headers */,
 				BD1C8EBB2B63E35A00035740 /* swap_bytes_impl.h in Headers */,
 				BD055F3028EAC73500B41500 /* optimize.h in Headers */,
+				BDDA00192CEC7BF500EF25C3 /* aarch64_defs.h in Headers */,
 				BD055F2B28EAC73500B41500 /* costabs.h in Headers */,
 				BD055F1D28EAC73500B41500 /* init_costabs.h in Headers */,
 				BD055F2828EAC73500B41500 /* synth_8bit.h in Headers */,
