@@ -466,7 +466,7 @@
 #define PACKAGE_NAME "mpg123"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "mpg123 1.32.9"
+#define PACKAGE_STRING "mpg123 1.32.10"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "mpg123"
@@ -475,7 +475,7 @@
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "1.32.9"
+#define PACKAGE_VERSION "1.32.10"
 
 /* Define to only include portable library API (no off_t, no internal I/O). */
 /* #undef PORTABLE_API */
@@ -519,7 +519,7 @@
 /* #undef USE_YASM_FOR_AVX */
 
 /* Version number of package */
-#define VERSION "1.32.9"
+#define VERSION "1.32.10"
 
 /* Define to use Win32 named pipes */
 /* #undef WANT_WIN32_FIFO */
