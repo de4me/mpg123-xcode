@@ -6,6 +6,30 @@
 	objectVersion = 54;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		BD12584A2E151DD400668FF2 /* ALL-EXAMPLES */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BD1258622E151DD400668FF2 /* Build configuration list for PBXAggregateTarget "ALL-EXAMPLES" */;
+			buildPhases = (
+			);
+			dependencies = (
+				BD1258642E151DE800668FF2 /* PBXTargetDependency */,
+				BD1258662E151DE800668FF2 /* PBXTargetDependency */,
+				BD1258682E151DE800668FF2 /* PBXTargetDependency */,
+				BD12586A2E151DE800668FF2 /* PBXTargetDependency */,
+				BD12586C2E151DE800668FF2 /* PBXTargetDependency */,
+				BD12586E2E151DE800668FF2 /* PBXTargetDependency */,
+				BD1258702E151DE800668FF2 /* PBXTargetDependency */,
+				BD1258722E151DE800668FF2 /* PBXTargetDependency */,
+				BD1258742E151DE800668FF2 /* PBXTargetDependency */,
+			);
+			name = "ALL-EXAMPLES";
+			packageProductDependencies = (
+			);
+			productName = "ALL-EXAMPLES";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		BD067A8B28EB761300961B92 /* dump_seekindex.c in Sources */ = {isa = PBXBuildFile; fileRef = BD067A8328EB761300961B92 /* dump_seekindex.c */; };
 		BD067A9228EB76C800961B92 /* libmpg123.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD067A6928EB760300961B92 /* libmpg123.a */; };
@@ -164,6 +188,69 @@
 			proxyType = 2;
 			remoteGlobalIDString = BD01EF7E28EB0E3300A346BF;
 			remoteInfo = mpg123c;
+		};
+		BD1258632E151DE800668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD067A4728EB75EF00961B92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD067A4E28EB75EF00961B92;
+			remoteInfo = dump_seekindex;
+		};
+		BD1258652E151DE800668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD067A4728EB75EF00961B92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD067A9728EB77CC00961B92;
+			remoteInfo = extract_frames;
+		};
+		BD1258672E151DE800668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD067A4728EB75EF00961B92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD067AB028EB78F500961B92;
+			remoteInfo = feedseek;
+		};
+		BD1258692E151DE800668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD067A4728EB75EF00961B92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD067ABE28EB798800961B92;
+			remoteInfo = id3dump;
+		};
+		BD12586B2E151DE800668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD067A4728EB75EF00961B92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD067ACB28EB7A0F00961B92;
+			remoteInfo = mpg123_to_out123;
+		};
+		BD12586D2E151DE800668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD067A4728EB75EF00961B92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD0759522AC235C20071A91F;
+			remoteInfo = mpg123_to_wav_reader64;
+		};
+		BD12586F2E151DE800668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD067A4728EB75EF00961B92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD0759442AC2351C0071A91F;
+			remoteInfo = mpg123_to_wav_replaced_io;
+		};
+		BD1258712E151DE800668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD067A4728EB75EF00961B92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD067AD928EB7A7B00961B92;
+			remoteInfo = mpglib;
+		};
+		BD1258732E151DE800668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD067A4728EB75EF00961B92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD067AE628EB7AF100961B92;
+			remoteInfo = scan;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -592,7 +679,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					BD067A4E28EB75EF00961B92 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -620,6 +707,9 @@
 					};
 					BD0759522AC235C20071A91F = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					BD12584A2E151DD400668FF2 = {
+						CreatedOnToolsVersion = 16.4;
 					};
 				};
 			};
@@ -651,6 +741,7 @@
 				BD067AE628EB7AF100961B92 /* scan */,
 				BD0759442AC2351C0071A91F /* mpg123_to_wav_replaced_io */,
 				BD0759522AC235C20071A91F /* mpg123_to_wav_reader64 */,
+				BD12584A2E151DD400668FF2 /* ALL-EXAMPLES */,
 			);
 		};
 /* End PBXProject section */
@@ -865,6 +956,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD1258642E151DE800668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD067A4E28EB75EF00961B92 /* dump_seekindex */;
+			targetProxy = BD1258632E151DE800668FF2 /* PBXContainerItemProxy */;
+		};
+		BD1258662E151DE800668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD067A9728EB77CC00961B92 /* extract_frames */;
+			targetProxy = BD1258652E151DE800668FF2 /* PBXContainerItemProxy */;
+		};
+		BD1258682E151DE800668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD067AB028EB78F500961B92 /* feedseek */;
+			targetProxy = BD1258672E151DE800668FF2 /* PBXContainerItemProxy */;
+		};
+		BD12586A2E151DE800668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD067ABE28EB798800961B92 /* id3dump */;
+			targetProxy = BD1258692E151DE800668FF2 /* PBXContainerItemProxy */;
+		};
+		BD12586C2E151DE800668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD067ACB28EB7A0F00961B92 /* mpg123_to_out123 */;
+			targetProxy = BD12586B2E151DE800668FF2 /* PBXContainerItemProxy */;
+		};
+		BD12586E2E151DE800668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD0759522AC235C20071A91F /* mpg123_to_wav_reader64 */;
+			targetProxy = BD12586D2E151DE800668FF2 /* PBXContainerItemProxy */;
+		};
+		BD1258702E151DE800668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD0759442AC2351C0071A91F /* mpg123_to_wav_replaced_io */;
+			targetProxy = BD12586F2E151DE800668FF2 /* PBXContainerItemProxy */;
+		};
+		BD1258722E151DE800668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD067AD928EB7A7B00961B92 /* mpglib */;
+			targetProxy = BD1258712E151DE800668FF2 /* PBXContainerItemProxy */;
+		};
+		BD1258742E151DE800668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD067AE628EB7AF100961B92 /* scan */;
+			targetProxy = BD1258732E151DE800668FF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BD067A5428EB75EF00961B92 /* Debug */ = {
@@ -1121,6 +1260,22 @@
 			};
 			name = Release;
 		};
+		BD12584B2E151DD400668FF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD12584C2E151DD400668FF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1210,6 +1365,15 @@
 			buildConfigurations = (
 				BD0759582AC235C20071A91F /* Debug */,
 				BD0759592AC235C20071A91F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD1258622E151DD400668FF2 /* Build configuration list for PBXAggregateTarget "ALL-EXAMPLES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD12584B2E151DD400668FF2 /* Debug */,
+				BD12584C2E151DD400668FF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

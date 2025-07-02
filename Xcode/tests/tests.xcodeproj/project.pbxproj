@@ -6,6 +6,31 @@
 	objectVersion = 54;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		BD1258752E151E3B00668FF2 /* ALL-TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BD12588D2E151E3B00668FF2 /* Build configuration list for PBXAggregateTarget "ALL-TESTS" */;
+			buildPhases = (
+			);
+			dependencies = (
+				BD12588F2E151E5700668FF2 /* PBXTargetDependency */,
+				BD1258912E151E5700668FF2 /* PBXTargetDependency */,
+				BD1258932E151E5700668FF2 /* PBXTargetDependency */,
+				BD1258952E151E5700668FF2 /* PBXTargetDependency */,
+				BD1258972E151E5700668FF2 /* PBXTargetDependency */,
+				BD1258992E151E5700668FF2 /* PBXTargetDependency */,
+				BD12589B2E151E5700668FF2 /* PBXTargetDependency */,
+				BD12589D2E151E5700668FF2 /* PBXTargetDependency */,
+				BD12589F2E151E5700668FF2 /* PBXTargetDependency */,
+				BD1258A12E151E5700668FF2 /* PBXTargetDependency */,
+			);
+			name = "ALL-TESTS";
+			packageProductDependencies = (
+			);
+			productName = "ALL-TESTS";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		BD055F8228EAC9D800B41500 /* volume.c in Sources */ = {isa = PBXBuildFile; fileRef = BD055F7528EAC98D00B41500 /* volume.c */; };
 		BD055F8528EACA1500B41500 /* libsyn123.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD055F8428EACA1500B41500 /* libsyn123.a */; };
@@ -126,6 +151,76 @@
 			proxyType = 2;
 			remoteGlobalIDString = BDAF17FA28EA33DB003328DF;
 			remoteInfo = syn123;
+		};
+		BD12588E2E151E5700668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F5C28EAC95A00B41500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB7360228EACF450022D468;
+			remoteInfo = decode_fixed;
+		};
+		BD1258902E151E5700668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F5C28EAC95A00B41500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB7361128EAD1760022D468;
+			remoteInfo = noise;
+		};
+		BD1258922E151E5700668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F5C28EAC95A00B41500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB7361E28EAD22F0022D468;
+			remoteInfo = plain_id3;
+		};
+		BD1258942E151E5700668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F5C28EAC95A00B41500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD055F8B28EACA9E00B41500;
+			remoteInfo = resample_total;
+		};
+		BD1258962E151E5700668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F5C28EAC95A00B41500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB7362B28EAD2D40022D468;
+			remoteInfo = seek_accuracy;
+		};
+		BD1258982E151E5700668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F5C28EAC95A00B41500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB7363828EAD32E0022D468;
+			remoteInfo = seek_whence;
+		};
+		BD12589A2E151E5700668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F5C28EAC95A00B41500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB7368828EADA3C0022D468;
+			remoteInfo = sweeper;
+		};
+		BD12589C2E151E5700668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F5C28EAC95A00B41500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB7364528EAD37D0022D468;
+			remoteInfo = text;
+		};
+		BD12589E2E151E5700668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F5C28EAC95A00B41500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB7365228EAD3B90022D468;
+			remoteInfo = textprint;
+		};
+		BD1258A02E151E5700668FF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD055F5C28EAC95A00B41500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD055F6328EAC95A00B41500;
+			remoteInfo = volume;
 		};
 		BD4D261D28ECD27500A2E37F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -619,13 +714,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					BD055F6328EAC95A00B41500 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 					BD055F8B28EACA9E00B41500 = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					BD1258752E151E3B00668FF2 = {
+						CreatedOnToolsVersion = 16.4;
 					};
 					BDB7360228EACF450022D468 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -682,6 +780,7 @@
 				BDB7364528EAD37D0022D468 /* text */,
 				BDB7365228EAD3B90022D468 /* textprint */,
 				BD055F6328EAC95A00B41500 /* volume */,
+				BD1258752E151E3B00668FF2 /* ALL-TESTS */,
 			);
 		};
 /* End PBXProject section */
@@ -907,6 +1006,59 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BD12588F2E151E5700668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDB7360228EACF450022D468 /* decode_fixed */;
+			targetProxy = BD12588E2E151E5700668FF2 /* PBXContainerItemProxy */;
+		};
+		BD1258912E151E5700668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDB7361128EAD1760022D468 /* noise */;
+			targetProxy = BD1258902E151E5700668FF2 /* PBXContainerItemProxy */;
+		};
+		BD1258932E151E5700668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDB7361E28EAD22F0022D468 /* plain_id3 */;
+			targetProxy = BD1258922E151E5700668FF2 /* PBXContainerItemProxy */;
+		};
+		BD1258952E151E5700668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD055F8B28EACA9E00B41500 /* resample_total */;
+			targetProxy = BD1258942E151E5700668FF2 /* PBXContainerItemProxy */;
+		};
+		BD1258972E151E5700668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDB7362B28EAD2D40022D468 /* seek_accuracy */;
+			targetProxy = BD1258962E151E5700668FF2 /* PBXContainerItemProxy */;
+		};
+		BD1258992E151E5700668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDB7363828EAD32E0022D468 /* seek_whence */;
+			targetProxy = BD1258982E151E5700668FF2 /* PBXContainerItemProxy */;
+		};
+		BD12589B2E151E5700668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDB7368828EADA3C0022D468 /* sweeper */;
+			targetProxy = BD12589A2E151E5700668FF2 /* PBXContainerItemProxy */;
+		};
+		BD12589D2E151E5700668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDB7364528EAD37D0022D468 /* text */;
+			targetProxy = BD12589C2E151E5700668FF2 /* PBXContainerItemProxy */;
+		};
+		BD12589F2E151E5700668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDB7365228EAD3B90022D468 /* textprint */;
+			targetProxy = BD12589E2E151E5700668FF2 /* PBXContainerItemProxy */;
+		};
+		BD1258A12E151E5700668FF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD055F6328EAC95A00B41500 /* volume */;
+			targetProxy = BD1258A02E151E5700668FF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		BD055F6928EAC95A00B41500 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1051,6 +1203,22 @@
 			name = Debug;
 		};
 		BD055F9228EACA9E00B41500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BD1258762E151E3B00668FF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD1258772E151E3B00668FF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1212,6 +1380,15 @@
 			buildConfigurations = (
 				BD055F9128EACA9E00B41500 /* Debug */,
 				BD055F9228EACA9E00B41500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD12588D2E151E3B00668FF2 /* Build configuration list for PBXAggregateTarget "ALL-TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD1258762E151E3B00668FF2 /* Debug */,
+				BD1258772E151E3B00668FF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

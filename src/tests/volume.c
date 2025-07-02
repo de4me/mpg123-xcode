@@ -3,6 +3,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdint.h>
+#include <stdlib.h>
 
 #define AMPTEST(name, bits, wbits, enc) \
 int name(syn123_handle *sh) \

@@ -12,6 +12,7 @@
 #include <mpg123.h>
 #include <stdio.h>
 #include <strings.h>
+#include <stdlib.h>
 
 /** Print usage info. */
 void usage(const char *cmd)
