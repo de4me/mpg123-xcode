@@ -10,11 +10,7 @@
 
 #if defined(OPT_NEON64) && !defined(ACCURATE_ROUNDING)
 
-#ifndef __APPLE__
-	.section	.rodata
-#else
-	.data
-#endif
+	RODATA
 	ALIGN16
 costab_neon_aarch64:
 	.word 1056974725

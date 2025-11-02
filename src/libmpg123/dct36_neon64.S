@@ -11,11 +11,7 @@
 
 #if defined(OPT_NEON64)
 
-#ifndef __APPLE__
-	.section	.rodata
-#else
-	.data
-#endif
+	RODATA
 	ALIGN16
 dct36_aarch64_COS9:
 	.word 0x3f5db3d7

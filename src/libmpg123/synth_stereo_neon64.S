@@ -10,11 +10,7 @@
 
 #if defined(OPT_NEON64) && !defined(ACCURATE_ROUNDING)
 
-#ifndef __APPLE__
-	.section	.rodata
-#else
-	.data
-#endif
+	RODATA
 	ALIGN16
 maxmin_s16:
 	.word   32767

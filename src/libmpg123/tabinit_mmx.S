@@ -12,7 +12,7 @@
 
 #if defined(OPT_MMX)
 
-.data
+	RODATA
 	ALIGN32
 .globl ASM_NAME(INT123_costab_mmxsse)
 ASM_NAME(INT123_costab_mmxsse):

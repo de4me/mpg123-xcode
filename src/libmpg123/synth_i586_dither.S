@@ -15,10 +15,7 @@
 
 #if defined(OPT_I586_DITHER)
 
-.data
-#if !defined (__APPLE__) && !defined (__OS2__)
-		.section	.rodata
-#endif
+	RODATA
 	ALIGN8
 .LC0:
 	.long 0x0,0x40dfffc0

@@ -36,11 +36,7 @@
 #if defined(OPT_3DNOW)
 
 #ifdef ACCURATE_ROUNDING
-#if !defined (__APPLE__) && !defined (__OS2__)
-	.section	.rodata
-#else
-	.data
-#endif
+	RODATA
 	ALIGN8
 max_s16:
 	.long   1191181824 /* 32767.0 */

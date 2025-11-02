@@ -11,11 +11,7 @@
 
 #if defined(OPT_NEON64)
 
-#ifndef __APPLE__
-	.section	.rodata
-#else
-	.data
-#endif
+	RODATA
 	ALIGN16
 maxmin_s32:
 	.word   1191182335
